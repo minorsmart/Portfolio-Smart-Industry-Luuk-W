@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<!-- saved from url=(0025)https://www.anylogic.com/ -->
+<html xml:lang="en" lang="en" class="bx-core bx-no-touch bx-no-retina bx-chrome"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="theme-color" content="#219bd8">
+        
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="yandex-verification" content="12f7f7df274d4ec8">
+        <meta name="yandex-verification" content="67d58806e089757c">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    	<link href="./AnyLogic_ Simulation Modeling Software Tools &amp; Solutions for Business_files/jquery-ui.css" rel="stylesheet">
+
+    	
+<meta name="keywords" content="Simulation software, simulation modeling, simulation tools, simulation solutions, modeling and simulation software, modeling and simulation tools, modeling and simulation solutions">
+<meta name="description" content="AnyLogic is the leading simulation software for business, utilized worldwide in many industries, including logistics, manufacturing, mining, healthcare, etc.">
+<script src="./AnyLogic_ Simulation Modeling Software Tools &amp; Solutions for Business_files/inferredEvents.js.download" async=""></script><script src="./AnyLogic_ Simulation Modeling Software Tools &amp; Solutions for Business_files/239775930272817" async=""></script><script src="./AnyLogic_ Simulation Modeling Software Tools &amp; Solutions for Business_files/sdk.js.download" async="" crossorigin="anonymous"></script><script type="text/javascript" async="" src="./AnyLogic_ Simulation Modeling Software Tools &amp; Solutions for Business_files/f.txt"></script><script id="facebook-jssdk" src="./AnyLogic_ Simulation Modeling Software Tools &amp; Solutions for Business_files/sdk.js(1).download"></script><script type="text/javascript" async="" src="./AnyLogic_ Simulation Modeling Software Tools &amp; Solutions for Business_files/insight.min.js.download"></script><script async="" src="./AnyLogic_ Simulation Modeling Software Tools &amp; Solutions for Business_files/fbevents.js.download"></script><script async="" src="./AnyLogic_ Simulation Modeling Software Tools &amp; Solutions for Business_files/uwt.js.download"></script><script type="text/javascript" async="" src="./AnyLogic_ Simulation Modeling Software Tools &amp; Solutions for Business_files/ba.js.download"></script><script type="text/javascript" async="" src="./AnyLogic_ Simulation Modeling Software Tools &amp; Solutions for Business_files/munchkin.js.download"></script><script type="text/javascript" async="" src="./AnyLogic_ Simulation Modeling Software Tools &amp; Solutions for Business_files/watch.js.download"></script><script async="" src="./AnyLogic_ Simulation Modeling Software Tools &amp; Solutions for Business_files/analytics.js.download"></script><script type="text/javascript" data-skip-moving="true">(function(w, d) {var v = w.frameCacheVars = {'CACHE_MODE':'HTMLCACHE','storageBlocks':[],'dynamicBlocks':{'agKIaS':'0a8eff8111cf'},'AUTO_UPDATE':true,'AUTO_UPDATE_TTL':'0'};var inv = false;if (v.AUTO_UPDATE === false){if (v.AUTO_UPDATE_TTL && v.AUTO_UPDATE_TTL > 0){var lm = Date.parse(d.lastModified);if (!isNaN(lm)){var td = new Date().getTime();if ((lm + v.AUTO_UPDATE_TTL * 1000) >= td){w.frameRequestStart = false;w.preventAutoUpdate = true;return;}inv = true;}}else{w.frameRequestStart = false;w.preventAutoUpdate = true;return;}}var r = w.XMLHttpRequest ? new XMLHttpRequest() : (w.ActiveXObject ? new w.ActiveXObject("Microsoft.XMLHTTP") : null);if (!r) { return; }w.frameRequestStart = true;var m = v.CACHE_MODE; var l = w.location; var x = new Date().getTime();var q = "?bxrand=" + x + (l.search.length > 0 ? "&" + l.search.substring(1) : "");var u = l.protocol + "//" + l.host + l.pathname + q;r.open("GET", u, true);r.setRequestHeader("BX-ACTION-TYPE", "get_dynamic");r.setRequestHeader("BX-CACHE-MODE", m);r.setRequestHeader("BX-CACHE-BLOCKS", v.dynamicBlocks ? JSON.stringify(v.dynamicBlocks) : "");if (inv){r.setRequestHeader("BX-INVALIDATE-CACHE", "Y");}try { r.setRequestHeader("BX-REF", d.referrer || "");} catch(e) {}if (m === "APPCACHE"){r.setRequestHeader("BX-APPCACHE-PARAMS", JSON.stringify(v.PARAMS));r.setRequestHeader("BX-APPCACHE-URL", v.PAGE_URL ? v.PAGE_URL : "");}r.onreadystatechange = function() {if (r.readyState != 4) { return; }var a = r.getResponseHeader("BX-RAND");var b = w.BX && w.BX.frameCache ? w.BX.frameCache : false;if (a != x || !((r.status >= 200 && r.status < 300) || r.status === 304 || r.status === 1223 || r.status === 0)){var f = {error:true, reason:a!=x?"bad_rand":"bad_status", url:u, xhr:r, status:r.status};if (w.BX && w.BX.ready){BX.ready(function() {setTimeout(function(){BX.onCustomEvent("onFrameDataRequestFail", [f]);}, 0);});}else{w.frameRequestFail = f;}return;}if (b){b.onFrameDataReceived(r.responseText);if (!w.frameUpdateInvoked){b.update(false);}w.frameUpdateInvoked = true;}else{w.frameDataString = r.responseText;}};r.send();})(window, document);</script>
+<script type="text/javascript" data-skip-moving="true">(function(w, d, n) {var cl = "bx-core";var ht = d.documentElement;var htc = ht ? ht.className : undefined;if (htc === undefined || htc.indexOf(cl) !== -1){return;}var ua = n.userAgent;if (/(iPad;)|(iPhone;)/i.test(ua)){cl += " bx-ios";}else if (/Android/i.test(ua)){cl += " bx-android";}cl += (/(ipad|iphone|android|mobile|touch)/i.test(ua) ? " bx-touch" : " bx-no-touch");cl += w.devicePixelRatio && w.devicePixelRatio >= 2? " bx-retina": " bx-no-retina";var ieVersion = -1;if (/AppleWebKit/.test(ua)){cl += " bx-chrome";}else if ((ieVersion = getIeVersion()) > 0){cl += " bx-ie bx-ie" + ieVersion;if (ieVersion > 7 && ieVersion < 10 && !isDoctype()){cl += " bx-quirks";}}else if (/Opera/.test(ua)){cl += " bx-opera";}else if (/Gecko/.test(ua)){cl += " bx-firefox";}if (/Macintosh/i.test(ua)){cl += " bx-mac";}ht.className = htc ? htc + " " + cl : cl;function isDoctype(){if (d.compatMode){return d.compatMode == "CSS1Compat";}return d.documentElement && d.documentElement.clientHeight;}function getIeVersion(){if (/Opera/i.test(ua) || /Webkit/i.test(ua) || /Firefox/i.test(ua) || /Chrome/i.test(ua)){return -1;}var rv = -1;if (!!(w.MSStream) && !(w.ActiveXObject) && ("ActiveXObject" in w)){rv = 11;}else if (!!d.documentMode && d.documentMode >= 10){rv = 10;}else if (!!d.documentMode && d.documentMode >= 9){rv = 9;}else if (d.attachEvent && !/Opera/.test(ua)){rv = 8;}if (rv == -1 || rv == 8){var re;if (n.appName == "Microsoft Internet Explorer"){re = new RegExp("MSIE ([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}else if (n.appName == "Netscape"){rv = 11;re = new RegExp("Trident/.*rv:([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}}return rv;}})(window, document, navigator);</script>
+
+
+<link href="./AnyLogic_ Simulation Modeling Software Tools &amp; Solutions for Business_files/kernel_main_v1.css" type="text/css" rel="stylesheet">
+<link href="./AnyLogic_ Simulation Modeling Software Tools &amp; Solutions for Business_files/template_78dba23e617215af3829455c8157a7c6_v1.css" type="text/css" data-template-style="true" rel="stylesheet">
+
+
+
+<meta property="og:title" content="AnyLogic: Simulation Modeling Software Tools &amp; Solutions for Business">
+<meta property="og:description" content="AnyLogic is the leading simulation software for business, utilized worldwide in many industries, including logistics, manufacturing, mining, healthcare, etc.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://www.anylogic.com/local/templates/anylogic/i/anylogic-og.jpg">
+<meta property="og:url" content="https://www.anylogic.com/">
+<link rel="canonical" href="https://www.anylogic.com/">
+<link rel="alternate" hreflang="de" href="https://www.anylogic.de/">
+<link rel="alternate" hreflang="fr" href="https://www.anylogic.fr/">
+<link rel="alternate" hreflang="ja" href="https://www.anylogic.jp/">
+<link rel="alternate" hreflang="zh" href="https://www.anylogic.cn/">
+<link rel="alternate" hreflang="ru" href="https://www.anylogic.ru/">
+<link rel="alternate" hreflang="x-default" href="https://www.anylogic.com/">
+
+
+
+    	       
+        <title>AnyLogic: Simulation Modeling Software Tools &amp; Solutions for Business</title>
+        <!--dns-prefetch-->
+        <link rel="dns-prefetch" href="https://fonts.googleapis.com/">
+        <link rel="dns-prefetch" href="https://google-analytics.com/">
+        <link rel="dns-prefetch" href="https://static.ads-twitter.com/">
+        <link rel="dns-prefetch" href="https://munchkin.marketo.net/">
+        <link rel="dns-prefetch" href="https://connect.facebook.net/">
+        <link rel="dns-prefetch" href="https://mc.yandex.ru/">
+        <link rel="dns-prefetch" href="https://yastatic.net/">
+        <link rel="dns-prefetch" href="https://snap.licdn.com/">
+        <link rel="dns-prefetch" href="https://bitrix.info/">
+        <link rel="dns-prefetch" href="https://googletagmanager.com/">
+        <link rel="preconnect" href="https://038-nfp-336.mktoresp.com/">
+        <!--dns-prefetch-->
+        <link rel="apple-touch-icon" sizes="180x180" href="https://www.anylogic.com/local/templates/anylogic/meta/apple-touch-icon.png"> 
+        <link rel="icon" type="image/png" href="https://www.anylogic.com/local/templates/anylogic/meta/favicon-32x32.png" sizes="32x32"> 
+        <link rel="icon" type="image/png" href="https://www.anylogic.com/local/templates/anylogic/meta/favicon-16x16.png" sizes="16x16"> 
+        <link rel="manifest" href="https://www.anylogic.com/local/templates/anylogic/meta/manifest.json"> 
+        <link rel="mask-icon" href="https://www.anylogic.com/local/templates/anylogic/meta/safari-pinned-tab.svg" color="#5bbad5"> 
+        <meta name="theme-color" content="#ffffff">
+    	<link rel="shortcut icon" href="https://www.anylogic.com/favicon.ico">
+    	<script data-skip-moving="true">document.cookie='resolution='+Math.max(screen.width,screen.height)+("devicePixelRatio" in window ? ","+devicePixelRatio : ",1")+'; path=/';</script>
+
+    	<!-- Google Analytics -->
+		<script data-skip-moving="true">
+    		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    		ga('create', 'UA-121835-1', 'auto');
+    		ga('send', 'pageview');
+		</script>
+	   <!-- End Google Analytics -->
+    
+        <!--[if lte IE 9]>
+            <script data-skip-moving="true" src="/local/templates/anylogic/js/css3-mediaqueries.min.js"></script>
+        <![endif]-->
+		<link href="./AnyLogic_ Simulation Modeling Software Tools &amp; Solutions for Business_files/fonts.css" rel="stylesheet">
+		<script data-skip-moving="true" src="./AnyLogic_ Simulation Modeling Software Tools &amp; Solutions for Business_files/config.js.download"></script>
+                    <meta property="fb:app_id" content="250139135521361">
+             <!-- Global site tag (gtag.js) - Google Ads: 949013532 -->
+            
+            
+                <!-- Twitter universal website tag code -->
+        
+        <!-- End Twitter universal website tag code -->
+        <!-- Facebook Pixel Code -->
+        
+        <noscript><img height="1" width="1" style="display:none"
+                       src="https://www.facebook.com/tr?id=239775930272817&ev=PageView&noscript=1"
+            /></noscript>
+        <!-- End Facebook Pixel Code -->
+         <noscript> <img height="1" width="1" style="display:none;" alt="" src="https://dc.ads.linkedin.com/collect/?pid=250098&fmt=gif" /> </noscript>
+
+    <script type="text/javascript" async="" src="./AnyLogic_ Simulation Modeling Software Tools &amp; Solutions for Business_files/munchkin.js(1).download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="/local/templates/anylogic/js/main.js?4" src="./AnyLogic_ Simulation Modeling Software Tools &amp; Solutions for Business_files/main.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery" src="./AnyLogic_ Simulation Modeling Software Tools &amp; Solutions for Business_files/jquery.min.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="progress" src="./AnyLogic_ Simulation Modeling Software Tools &amp; Solutions for Business_files/progress.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="analytics" src="./AnyLogic_ Simulation Modeling Software Tools &amp; Solutions for Business_files/bb.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="tooltipster" src="./AnyLogic_ Simulation Modeling Software Tools &amp; Solutions for Business_files/tooltipster.bundle.min.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="domReady" src="./AnyLogic_ Simulation Modeling Software Tools &amp; Solutions for Business_files/domReady.js.download"></script><script src="./AnyLogic_ Simulation Modeling Software Tools &amp; Solutions for Business_files/f(1).txt"></script></head>
+    <body class="anylogic-en">
+            <div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; width: 0px; height: 0px;"><div><iframe name="fb_xdm_frame_https" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="./AnyLogic_ Simulation Modeling Software Tools &amp; Solutions for Business_files/xd_arbiter.html" style="border: none;"></iframe></div></div></div>
+        
+            <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NC48GT" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+		<div id="panel"></div>
+		<div class="nav__mobile">
+            <div class="nav__mobile__wrap">
+                <div class="nav__mobile__button-close icon_menu-close"></div>
+                <a href="https://www.anylogic.com/"><div class="logo-black">AnyLogic</div></a>
+                <ul itemtype="http://schema.org/SiteNavigationElement" class="nav__mobile__list">
+				<li>		
+			<a href="javascript:void(0);" class="">Industries</a>
+			<div class="nav__mobile-dropdown">
+				<ul>
+								<li><a itemprop="url" href="https://www.anylogic.com/supply-chains/" class="">Supply Chains</a></li>
+										<li><a itemprop="url" href="https://www.anylogic.com/manufacturing/" class="">Manufacturing</a></li>
+										<li><a itemprop="url" href="https://www.anylogic.com/transportation/" class="">Transportation</a></li>
+										<li><a itemprop="url" href="https://www.anylogic.com/warehouse-operations/" class="">Warehouse Operations</a></li>
+										<li><a itemprop="url" href="https://www.anylogic.com/rail-logistics/" class="">Rail Logistics</a></li>
+										<li><a itemprop="url" href="https://www.anylogic.com/mining/" class="">Mining </a></li>
+										<li><a itemprop="url" href="https://www.anylogic.com/oil-and-gas/" class="">Oil &amp; Gas</a></li>
+										<li><a itemprop="url" href="https://www.anylogic.com/ports/" class="">Ports &amp; Terminals</a></li>
+										<li><a itemprop="url" href="https://www.anylogic.com/road-traffic/" class="">Road Traffic</a></li>
+										<li><a itemprop="url" href="https://www.anylogic.com/airports-stations-shopping-malls/" class="">Passenger Terminals</a></li>
+										<li><a itemprop="url" href="https://www.anylogic.com/healthcare/" class="">Healthcare</a></li>
+										<li><a itemprop="url" href="https://www.anylogic.com/business-processes/" class="">Business Processes</a></li>
+										<li><a itemprop="url" href="https://www.anylogic.com/project-asset-management/" class="">Asset Management</a></li>
+										<li><a itemprop="url" href="https://www.anylogic.com/markets/" class="">Marketing</a></li>
+										<li><a itemprop="url" href="https://www.anylogic.com/social-processes/" class="">Social Processes</a></li>
+										<li><a itemprop="url" href="https://www.anylogic.com/defense/" class="">Defense</a></li>
+							</ul></div><div class="nav__mobile-dropdown-icon"></div></li>				<li>		
+			<a href="javascript:void(0);" class="">Features</a>
+			<div class="nav__mobile-dropdown">
+				<ul>
+								<li><a itemprop="url" href="https://www.anylogic.com/use-of-simulation/" class="">Why simulation</a></li>
+										<li><a itemprop="url" href="https://www.anylogic.com/features/" class="">Technology</a></li>
+										<li><a itemprop="url" href="https://www.anylogic.com/resources/libraries/process-modeling-library/" class="">Libraries</a></li>
+										<li><a itemprop="url" href="https://www.anylogic.com/features/cloud/" class="">Cloud</a></li>
+										<li><a itemprop="url" href="https://www.anylogic.com/features/artificial-intelligence/" class="">Artificial Intelligence</a></li>
+							</ul></div><div class="nav__mobile-dropdown-icon"></div></li>						<li><a itemprop="url" href="https://www.anylogic.com/purchase/" class="">Purchase</a></li>
+								<li>		
+			<a href="javascript:void(0);" class="">Resources</a>
+			<div class="nav__mobile-dropdown">
+				<ul>
+								<li><a itemprop="url" href="https://www.anylogic.com/resources/white-papers/" class="">White papers</a></li>
+										<li><a itemprop="url" href="https://www.anylogic.com/resources/case-studies/" class="">Case studies</a></li>
+										<li><a itemprop="url" href="https://www.anylogic.com/blog/" class="">Blog</a></li>
+										<li><a itemprop="url" href="https://www.anylogic.com/resources/books/" class="">Books</a></li>
+										<li><a itemprop="url" href="https://www.anylogic.com/resources/educational-videos/" class="">Video tour</a></li>
+										<li><a itemprop="url" href="https://www.anylogic.com/resources/training-events/" class="">Training and events</a></li>
+										<li><a itemprop="url" href="https://www.anylogic.com/resources/conference/" class="">AnyLogic Conference</a></li>
+										<li><a itemprop="url" target="_blank" href="https://help.anylogic.com/" class="">Documentation</a></li>
+										<li><a itemprop="url" href="https://www.anylogic.com/resources/articles/" class="">Academic articles</a></li>
+										<li><a itemprop="url" href="https://www.anylogic.com/resources/support/" class="">Support</a></li>
+							</ul></div><div class="nav__mobile-dropdown-icon"></div></li>				<li>		
+			<a href="javascript:void(0);" class="">Company</a>
+			<div class="nav__mobile-dropdown">
+				<ul>
+								<li><a itemprop="url" href="https://www.anylogic.com/company/clients/" class="">Clients &amp; Testimonials</a></li>
+										<li><a itemprop="url" href="https://www.anylogic.com/company/about-us/" class="">About us</a></li>
+										<li><a itemprop="url" href="https://www.anylogic.com/company/timeline/" class="">AnyLogic Timeline</a></li>
+										<li><a itemprop="url" href="https://www.anylogic.com/company/contact-us/" class="">Contacts</a></li>
+										<li><a itemprop="url" target="_blank" href="https://the.anylogic.company/careers/" class="">Careers</a></li>
+										<li><a itemprop="url" href="https://www.anylogic.com/company/partnership/" class="">Partners</a></li>
+					</ul></div><div class="nav__mobile-dropdown-icon"></div></li></ul>            </div>
+            <div class="nav__mobile__bg"></div>
+        </div>
+		<header class="header row">
+			<div class="nav__mobile__button icon_menu"></div>
+            <div itemscope="" itemtype="https://schema.org/Organization"><a itemprop="url" href="https://www.anylogic.com/">
+                    <div class="logo">
+                        <meta src="https://www.anylogic.com/local/templates/anylogic/i/anylogic-og.jpg" itemprop="logo">
+                        <span itemprop="name">AnyLogic</span>
+                    </div>
+                </a>
+            </div>
+			<nav class="nav">
+				<div class="nav__lang" aria-haspopup="true">
+    <span class="nav__lang-selected">EN</span>
+    <ul>
+        <li><span>EN</span></li>
+                    <li>
+                <a href="https://www.anylogic.ru/">
+                    <span>RU</span>
+                </a>
+            </li>
+                    <li>
+                <a href="https://www.anylogic.de/">
+                    <span>DE</span>
+                </a>
+            </li>
+                    <li>
+                <a href="https://www.anylogic.fr/">
+                    <span>FR</span>
+                </a>
+            </li>
+                    <li>
+                <a href="https://www.anylogic.cn/">
+                    <span>CN</span>
+                </a>
+            </li>
+                    <li>
+                <a href="https://www.anylogic.jp/">
+                    <span>JP</span>
+                </a>
+            </li>
+            </ul>
+</div>				<a href="https://www.anylogic.com/downloads/" class="nav__download button button_small">Download</a>
+				<ul itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement" class="nav__menu">
+				<li class="">
+			<span class="nav__menu-dropdown-parent ">Industries</span>
+			<div class="nav__menu-dropdown">
+				<ul>
+								<li class=""><a itemprop="url" href="https://www.anylogic.com/supply-chains/" class="">Supply Chains</a></li>
+										<li class=""><a itemprop="url" href="https://www.anylogic.com/manufacturing/" class="">Manufacturing</a></li>
+										<li class=""><a itemprop="url" href="https://www.anylogic.com/transportation/" class="">Transportation</a></li>
+										<li class=""><a itemprop="url" href="https://www.anylogic.com/warehouse-operations/" class="">Warehouse Operations</a></li>
+										<li class=""><a itemprop="url" href="https://www.anylogic.com/rail-logistics/" class="">Rail Logistics</a></li>
+										<li class=""><a itemprop="url" href="https://www.anylogic.com/mining/" class="">Mining </a></li>
+										<li class=""><a itemprop="url" href="https://www.anylogic.com/oil-and-gas/" class="">Oil &amp; Gas</a></li>
+										<li class=""><a itemprop="url" href="https://www.anylogic.com/ports/" class="">Ports &amp; Terminals</a></li>
+										<li class=""><a itemprop="url" href="https://www.anylogic.com/road-traffic/" class="">Road Traffic</a></li>
+										<li class=""><a itemprop="url" href="https://www.anylogic.com/airports-stations-shopping-malls/" class="">Passenger Terminals</a></li>
+										<li class=""><a itemprop="url" href="https://www.anylogic.com/healthcare/" class="">Healthcare</a></li>
+										<li class=""><a itemprop="url" href="https://www.anylogic.com/business-processes/" class="">Business Processes</a></li>
+										<li class=""><a itemprop="url" href="https://www.anylogic.com/project-asset-management/" class="">Asset Management</a></li>
+										<li class=""><a itemprop="url" href="https://www.anylogic.com/markets/" class="">Marketing</a></li>
+										<li class=""><a itemprop="url" href="https://www.anylogic.com/social-processes/" class="">Social Processes</a></li>
+										<li class=""><a itemprop="url" href="https://www.anylogic.com/defense/" class="">Defense</a></li>
+							</ul></div></li>				<li class="">
+			<span class="nav__menu-dropdown-parent ">Features</span>
+			<div class="nav__menu-dropdown">
+				<ul>
+								<li class=""><a itemprop="url" href="https://www.anylogic.com/use-of-simulation/" class="">Why simulation</a></li>
+										<li class=""><a itemprop="url" href="https://www.anylogic.com/features/" class="">Technology</a></li>
+										<li class=""><a itemprop="url" href="https://www.anylogic.com/resources/libraries/process-modeling-library/" class="">Libraries</a></li>
+										<li class=""><a itemprop="url" href="https://www.anylogic.com/features/cloud/" class="">Cloud</a></li>
+										<li class=""><a itemprop="url" href="https://www.anylogic.com/features/artificial-intelligence/" class="">Artificial Intelligence</a></li>
+							</ul></div></li>						<li class=""><a itemprop="url" href="https://www.anylogic.com/purchase/" class="">Purchase</a></li>
+								<li class="">
+			<span class="nav__menu-dropdown-parent ">Resources</span>
+			<div class="nav__menu-dropdown">
+				<ul>
+								<li class=""><a itemprop="url" href="https://www.anylogic.com/resources/white-papers/" class="">White papers</a></li>
+										<li class=""><a itemprop="url" href="https://www.anylogic.com/resources/case-studies/" class="">Case studies</a></li>
+										<li class=""><a itemprop="url" href="https://www.anylogic.com/blog/" class="">Blog</a></li>
+										<li class=""><a itemprop="url" href="https://www.anylogic.com/resources/books/" class="">Books</a></li>
+										<li class=""><a itemprop="url" href="https://www.anylogic.com/resources/educational-videos/" class="">Video tour</a></li>
+										<li class=""><a itemprop="url" href="https://www.anylogic.com/resources/training-events/" class="">Training and events</a></li>
+										<li class=""><a itemprop="url" href="https://www.anylogic.com/resources/conference/" class="">AnyLogic Conference</a></li>
+										<li class=""><a itemprop="url" target="_blank" href="https://help.anylogic.com/" class="">Documentation</a></li>
+										<li class=""><a itemprop="url" href="https://www.anylogic.com/resources/articles/" class="">Academic articles</a></li>
+										<li class=""><a itemprop="url" href="https://www.anylogic.com/resources/support/" class="">Support</a></li>
+							</ul></div></li>				<li class="">
+			<span class="nav__menu-dropdown-parent ">Company</span>
+			<div class="nav__menu-dropdown">
+				<ul>
+								<li class=""><a itemprop="url" href="https://www.anylogic.com/company/clients/" class="">Clients &amp; Testimonials</a></li>
+										<li class=""><a itemprop="url" href="https://www.anylogic.com/company/about-us/" class="">About us</a></li>
+										<li class=""><a itemprop="url" href="https://www.anylogic.com/company/timeline/" class="">AnyLogic Timeline</a></li>
+										<li class=""><a itemprop="url" href="https://www.anylogic.com/company/contact-us/" class="">Contacts</a></li>
+										<li class=""><a itemprop="url" target="_blank" href="https://the.anylogic.company/careers/" class="">Careers</a></li>
+										<li class=""><a itemprop="url" href="https://www.anylogic.com/company/partnership/" class="">Partners</a></li>
+					</ul></div></li></ul>			</nav>
+
+		</header>
+<main class="slider">
+        <div data-img="/upload/iblock/e3b/e3b495ecc2eeb1838d9e9a7c7a3b69ac.jpg" class="slider__item">
+		<div class="slider__wrap">
+			<div class="slider__content">
+                                    <h1>AnyLogic Simulation Software</h1>
+                				<h3>make intelligent decisions</h3>
+				<div class="slider__content-text">
+					<p>AnyLogic is the leading simulation modeling software for business applications, utilized worldwide by over 40% of Fortune 100 companies. AnyLogic simulation models enable analysts, engineers, and managers to gain deeper insights and optimize complex systems and processes across a wide range of industries.</p>				</div>
+				<a href="https://www.anylogic.com/features/" class="button button_white">Learn more</a>			</div>
+		</div>
+	</div>
+        <div data-img="/upload/iblock/dba/dbad2a0178782c4c827b8885f1cc50fb.jpg" class="slider__item">
+		<div class="slider__wrap">
+			<div class="slider__content">
+                                    <h2>Webinar: Automated Deep Learning</h2>
+                				<h3>Sept 19, 2019, 3 pm — 4 pm UTC </h3>
+				<div class="slider__content-text">
+					<p>Join our webinar with Skymind, <strong>September 19th</strong>, as we show how AnyLogic and Pathmind automated DRL combine for simulation based training. We'll show how to get optimal policies using the latest DRL code libraries, eliminate the need for complex manual setup, and avoid long wait times.</p>				</div>
+				<a href="https://www.anylogic.com/resources/training-events/anylogic-ai-webinar-september-2019/" class="button button_white">Register Now</a>			</div>
+		</div>
+	</div>
+        <div data-img="/upload/iblock/aef/aefd8b0c96cf478ec84f1ac5a2bd2d63.jpg" class="slider__item">
+		<div class="slider__wrap">
+			<div class="slider__content">
+                                    <h2>AnyLogic Cloud</h2>
+                				<h3>access, run, and share simulation models online</h3>
+				<div class="slider__content-text">
+					<p>AnyLogic Cloud is a secure web platform for running simulation models. Use rich cloud-based experimentation capabilities, collaborate when developing and executing models, and deliver simulation results instantly, online. All for more efficient applied simulation at your organization’s operational level.</p>				</div>
+				<a href="https://www.anylogic.com/features/cloud/" class="button button_white">Learn more</a>			</div>
+		</div>
+	</div>
+    </main>   
+<div id="bxdynamic_agKIaS_start" style="display:none"></div><section class="block-usecase block row">
+    <h2>AnyLogic simulation software is used in these industries:</h2>
+    <ul class="block-usecase__list">
+    	<li class="block-usecase__grid"></li>
+    	<li class="block-usecase__grid-gutter"></li>
+     
+    	
+    	<li class="block-usecase__item">
+    		<a href="https://www.anylogic.com/supply-chains/" class="block-usecase__item-container">
+    			<div class="block-usecase__item-icon"><span class="icon icon-supply-chains"></span></div>
+    			<div class="block-usecase__item-title">Supply Chains</div>
+    			<div class="block-usecase__item-hover">
+    				<p>supply chain design</p><p>policy evaluation</p><p>risk assessment</p><p>and more...</p>    			</div>
+    			<div class="icon_arrow-right-white-small"></div>
+    		</a>
+    	</li>
+     
+    	
+    	<li class="block-usecase__item">
+    		<a href="https://www.anylogic.com/manufacturing/" class="block-usecase__item-container">
+    			<div class="block-usecase__item-icon"><span class="icon icon-manufacturing"></span></div>
+    			<div class="block-usecase__item-title">Manufacturing</div>
+    			<div class="block-usecase__item-hover">
+    				<p>production planning</p>
+<p>process improvement</p>
+<p>layout optimization</p>
+<p>and more...</p>    			</div>
+    			<div class="icon_arrow-right-white-small"></div>
+    		</a>
+    	</li>
+     
+    	
+    	<li class="block-usecase__item">
+    		<a href="https://www.anylogic.com/transportation/" class="block-usecase__item-container">
+    			<div class="block-usecase__item-icon"><span class="icon icon-transportation "></span></div>
+    			<div class="block-usecase__item-title">Transportation</div>
+    			<div class="block-usecase__item-hover">
+    				<p>logistics planning</p>
+<p>fleet management</p>
+<p>risk analysis</p>
+<p>and more...</p>
+    			</div>
+    			<div class="icon_arrow-right-white-small"></div>
+    		</a>
+    	</li>
+     
+    	
+    	<li class="block-usecase__item">
+    		<a href="https://www.anylogic.com/warehouse-operations/" class="block-usecase__item-container">
+    			<div class="block-usecase__item-icon"><span class="icon icon-warehouse"></span></div>
+    			<div class="block-usecase__item-title">Warehouse Operations</div>
+    			<div class="block-usecase__item-hover">
+    				<p>layout design</p><p>picking optimization</p><p>staffing policies</p><p>and more...</p>    			</div>
+    			<div class="icon_arrow-right-white-small"></div>
+    		</a>
+    	</li>
+     
+    	
+    	<li class="block-usecase__item">
+    		<a href="https://www.anylogic.com/rail-logistics/" class="block-usecase__item-container">
+    			<div class="block-usecase__item-icon"><span class="icon icon-railroads"></span></div>
+    			<div class="block-usecase__item-title">Rail Logistics</div>
+    			<div class="block-usecase__item-hover">
+    				<p> network design</p>
+<p> schedule optimization</p>
+<p> policy testing</p>
+<p> and more…</p>
+    			</div>
+    			<div class="icon_arrow-right-white-small"></div>
+    		</a>
+    	</li>
+     
+    	
+    	<li class="block-usecase__item">
+    		<a href="https://www.anylogic.com/mining/" class="block-usecase__item-container">
+    			<div class="block-usecase__item-icon"><span class="icon icon-mining"></span></div>
+    			<div class="block-usecase__item-title">Mining </div>
+    			<div class="block-usecase__item-hover">
+    				<p>forecasts &amp; analysis</p>
+<p>excavation planning</p>
+<p>fleet optimization</p>
+<p>and more...</p>    			</div>
+    			<div class="icon_arrow-right-white-small"></div>
+    		</a>
+    	</li>
+     
+    	
+    	<li class="block-usecase__item">
+    		<a href="https://www.anylogic.com/oil-and-gas/" class="block-usecase__item-container">
+    			<div class="block-usecase__item-icon"><span class="icon icon-oilgas"></span></div>
+    			<div class="block-usecase__item-title">Oil &amp; Gas</div>
+    			<div class="block-usecase__item-hover">
+    				<p>operations planning</p>
+<p>storage management</p>
+<p>oil transfer</p>
+<p>and more...</p>    			</div>
+    			<div class="icon_arrow-right-white-small"></div>
+    		</a>
+    	</li>
+     
+    	
+    	<li class="block-usecase__item">
+    		<a href="https://www.anylogic.com/ports/" class="block-usecase__item-container">
+    			<div class="block-usecase__item-icon"><span class="icon icon-ports"></span></div>
+    			<div class="block-usecase__item-title">Ports &amp; Terminals</div>
+    			<div class="block-usecase__item-hover">
+    				<p>container &amp; bulk</p>
+<p>resource mgmt</p>
+<p>risk assessment</p>
+<p>and more...</p>    			</div>
+    			<div class="icon_arrow-right-white-small"></div>
+    		</a>
+    	</li>
+     
+    	
+    	<li class="block-usecase__item disabled">
+    		<a href="https://www.anylogic.com/road-traffic/" class="block-usecase__item-container">
+    			<div class="block-usecase__item-icon"><span class="icon icon-roadtraffic"></span></div>
+    			<div class="block-usecase__item-title">Road Traffic</div>
+    			<div class="block-usecase__item-hover">
+    				<p> road planning</p>
+<p> throughput analysis</p>
+<p> network optimization</p>
+<p> and more…</p>
+    			</div>
+    			<div class="icon_arrow-right-white-small"></div>
+    		</a>
+    	</li>
+     
+    	
+    	<li class="block-usecase__item disabled">
+    		<a href="https://www.anylogic.com/airports-stations-shopping-malls/" class="block-usecase__item-container">
+    			<div class="block-usecase__item-icon"><span class="icon icon-airports"></span></div>
+    			<div class="block-usecase__item-title">Passenger Terminals</div>
+    			<div class="block-usecase__item-hover">
+    				<p>building capacity</p><p>service points</p><p>evacuation planning</p><p>and more...</p>
+    			</div>
+    			<div class="icon_arrow-right-white-small"></div>
+    		</a>
+    	</li>
+     
+    	
+    	<li class="block-usecase__item disabled">
+    		<a href="https://www.anylogic.com/healthcare/" class="block-usecase__item-container">
+    			<div class="block-usecase__item-icon"><span class="icon icon-healthcare"></span></div>
+    			<div class="block-usecase__item-title">Healthcare</div>
+    			<div class="block-usecase__item-hover">
+    				<p>facility design</p>
+<p>process improvement</p><p>policy evaluation</p><p>and more...</p>    			</div>
+    			<div class="icon_arrow-right-white-small"></div>
+    		</a>
+    	</li>
+     
+    	
+    	<li class="block-usecase__item disabled">
+    		<a href="https://www.anylogic.com/business-processes/" class="block-usecase__item-container">
+    			<div class="block-usecase__item-icon"><span class="icon icon-business"></span></div>
+    			<div class="block-usecase__item-title">Business Processes</div>
+    			<div class="block-usecase__item-hover">
+    				<p>operational efficiency</p><p>cost reduction</p><p>bottleneck analysis</p><p>and more...</p>    			</div>
+    			<div class="icon_arrow-right-white-small"></div>
+    		</a>
+    	</li>
+     
+    	
+    	<li class="block-usecase__item disabled">
+    		<a href="https://www.anylogic.com/project-asset-management/" class="block-usecase__item-container">
+    			<div class="block-usecase__item-icon"><span class="icon icon-project-asset"></span></div>
+    			<div class="block-usecase__item-title">Asset Management</div>
+    			<div class="block-usecase__item-hover">
+    				<p>forecasting</p><p>risk analysis</p><p>project ranking</p><p>and more...</p>    			</div>
+    			<div class="icon_arrow-right-white-small"></div>
+    		</a>
+    	</li>
+     
+    	
+    	<li class="block-usecase__item disabled">
+    		<a href="https://www.anylogic.com/markets/" class="block-usecase__item-container">
+    			<div class="block-usecase__item-icon"><span class="icon icon-markets"></span></div>
+    			<div class="block-usecase__item-title">Marketing</div>
+    			<div class="block-usecase__item-hover">
+    				<p>consumer choice</p><p>market behavior</p><p>promotion response</p><p>and more...</p>    			</div>
+    			<div class="icon_arrow-right-white-small"></div>
+    		</a>
+    	</li>
+     
+    	
+    	<li class="block-usecase__item disabled">
+    		<a href="https://www.anylogic.com/social-processes/" class="block-usecase__item-container">
+    			<div class="block-usecase__item-icon"><span class="icon icon-social"></span></div>
+    			<div class="block-usecase__item-title">Social Processes</div>
+    			<div class="block-usecase__item-hover">
+    				<p>healthcare policies</p><p>economic processes</p><p>environmental impact</p><p>and more...</p>    			</div>
+    			<div class="icon_arrow-right-white-small"></div>
+    		</a>
+    	</li>
+     
+    	
+    	<li class="block-usecase__item disabled">
+    		<a href="https://www.anylogic.com/defense/" class="block-usecase__item-container">
+    			<div class="block-usecase__item-icon"><span class="icon icon-military"></span></div>
+    			<div class="block-usecase__item-title">Defense</div>
+    			<div class="block-usecase__item-hover">
+    				<p>maintenance scheduling</p>
+<p>operations planning</p>
+<p>supply chain &amp; logistics</p>
+<p>and more...</p>    			</div>
+    			<div class="icon_arrow-right-white-small"></div>
+    		</a>
+    	</li>
+        </ul>    
+    <a href="https://www.anylogic.com/#" class="button button_blue">More industries</a>    
+</section> 
+ <section class="block-simulation block">
+<h2 class="row">Why simulation modeling?</h2>
+<div class="block-simulation__wrap">
+	<div class="block-simulation__content row">
+		<ul class="block-simulation__list">
+			<li class="block-simulation__grid"></li>
+			<li class="block-simulation__grid-gutter"></li>
+			<li class="block-simulation__item">
+			<h3 class="hr">Risk-free environment</h3>
+ <span class="block-simulation__text">Simulation modeling provides a safe way to test and explore different “what-if” scenarios. Make the right decision before making real-world changes.</span> </li>
+			<li class="block-simulation__item">
+			<h3 class="hr">Save money and time</h3>
+ <span class="block-simulation__text">Virtual experiments with simulation models are less expensive and take less time than experiments with real assets. </span> </li>
+			<li class="block-simulation__item">
+			<h3 class="hr">Visualization</h3>
+ <span class="block-simulation__text">Simulation models can be animated in 2D/3D, allowing concepts and ideas to be more easily verified, communicated, and understood.</span> </li>
+			<li class="block-simulation__item">
+			<h3 class="hr">Insight into dynamics</h3>
+ <span class="block-simulation__text">Unlike spreadsheet- or solver-based analytics, simulation modeling allows observation of&nbsp;system behavior over time at any level of detail. E.g., you can check warehouse storage space utilization at any given date. </span> </li>
+			<li class="block-simulation__item">
+			<h3 class="hr">Increased accuracy </h3>
+ <span class="block-simulation__text">A simulation model can capture much more details than an analytical model, which provides for increased accuracy and more precise forecast.</span> </li>
+			<li class="block-simulation__item">
+			<h3 class="hr">Handle uncertainty</h3>
+ <span class="block-simulation__text">Uncertainty in operations’ time and outcome can be easily represented in simulation models, which allows you to measure risk and find more robust solutions. </span> </li>
+		</ul>
+ <a href="https://www.anylogic.com/use-of-simulation/" class="button button_white">Read more</a>
+	</div>
+</div>
+ </section>
+<section class="block-trust block row">
+	<h2>These companies trust us</h2>
+
+	<ul class="block-trust__list">
+		<li class="block-trust__grid"></li>
+		<li class="block-trust__grid-gutter"></li>
+				<li class="block-trust__item"><div class="block-trust__item-container"><img src="./AnyLogic_ Simulation Modeling Software Tools &amp; Solutions for Business_files/48b5e4798095c6a92ce8e71709b595ea.png" alt="Vodafone" title="Vodafone"></div></li>
+				<li class="block-trust__item"><div class="block-trust__item-container"><img src="./AnyLogic_ Simulation Modeling Software Tools &amp; Solutions for Business_files/e2039d122d6f31a7fc3097e79b383799.png" alt="Airbus Group" title="Airbus Group"></div></li>
+				<li class="block-trust__item"><div class="block-trust__item-container"><img src="./AnyLogic_ Simulation Modeling Software Tools &amp; Solutions for Business_files/8133de8e449738278d306b871dd48bd4.png" alt="Google" title="Google"></div></li>
+				<li class="block-trust__item"><div class="block-trust__item-container"><img src="./AnyLogic_ Simulation Modeling Software Tools &amp; Solutions for Business_files/f700d52efa3be60fd6d6966321439f94.png" alt="DHL" title="DHL"></div></li>
+				<li class="block-trust__item"><div class="block-trust__item-container"><img src="./AnyLogic_ Simulation Modeling Software Tools &amp; Solutions for Business_files/36b04049d7fc7503cbae08dbd4b222d6.png" alt="Pfizer" title="Pfizer"></div></li>
+				<li class="block-trust__item"><div class="block-trust__item-container"><img src="./AnyLogic_ Simulation Modeling Software Tools &amp; Solutions for Business_files/c71b3ab9b6ed25965e1f1875c1f01788.png" alt="Ford Motor Company" title="Ford Motor Company"></div></li>
+				<li class="block-trust__item"><div class="block-trust__item-container"><img src="./AnyLogic_ Simulation Modeling Software Tools &amp; Solutions for Business_files/af9644bfe5eaf9770ee589dcd1a90d79.png" alt="Volkswagen" title="Volkswagen"></div></li>
+		 
+		<li class="block-trust__item block-trust__list-more">
+			<a href="https://www.anylogic.com/company/clients/">
+			<div class="block-trust__item-container">
+				<span class="icon icon_more"></span>
+				<div class="block-trust__list-more-text">View more</div>
+			</div>
+			</a>
+		</li>
+	</ul>
+</section> <section class="block-anylogic block">
+<h2 class="row">Why AnyLogic simulation software?</h2>
+<ul class="block-anylogic__tabs">
+	<li><a href="https://www.anylogic.com/#tab1">multimethod modeling</a></li>
+	<li><a href="https://www.anylogic.com/#tab2">animation and visualization</a></li>
+	<li><a href="https://www.anylogic.com/#tab3">industry-specific libraries</a></li>
+	<li><a href="https://www.anylogic.com/#tab4">GIS maps integration</a></li>
+	<li><a href="https://www.anylogic.com/#tab5">simulation in the cloud</a></li>
+</ul>
+<div class="block-anylogic__tab-wrap" id="tab1">
+	<div class="block-anylogic__tab">
+ <article> <img alt="Multimethod simulation software" src="./AnyLogic_ Simulation Modeling Software Tools &amp; Solutions for Business_files/6aa29cbf2f9b220bb67606624e07d5ea.jpg" class="block-anylogic__tabs-image-mobile" title="Multimethod simulation software">
+		<h3>Multimethod simulation modeling</h3>
+		<div class="block-anylogic__tabs-content">
+			<p>
+				 Develop simulation models using all three modern methods:
+			</p>
+			<ul>
+				<li><a href="https://www.anylogic.com/use-of-simulation/discrete-event-simulation/">Discrete Event</a></li>
+				<li><a href="https://www.anylogic.com/use-of-simulation/agent-based-modeling/">Agent-Based</a></li>
+				<li><a href="https://www.anylogic.com/use-of-simulation/system-dynamics/">System Dynamics</a></li>
+			</ul>
+			<p>
+				 The three methods can be used in any combination, with one software, to simulate business systems of any complexity. In AnyLogic simulation software, you can use various visual modeling languages: process flowcharts, statecharts, action charts, and stock &amp; flow diagrams.
+			</p>
+			<p>
+				 AnyLogic was the first tool to introduce multimethod simulation modeling, and still remains the only software that has that capability.
+			</p>
+		</div>
+ <a href="https://www.anylogic.com/features/" class="button button_blue">Read more</a> </article> <aside><img alt="Multimethod simulation software" src="./AnyLogic_ Simulation Modeling Software Tools &amp; Solutions for Business_files/6aa29cbf2f9b220bb67606624e07d5ea.jpg" title="Multimethod simulation software"></aside>
+	</div>
+</div>
+<div class="block-anylogic__tab-wrap" id="tab2">
+	<div class="block-anylogic__tab">
+ <article> <img alt="Simulation model animation" src="./AnyLogic_ Simulation Modeling Software Tools &amp; Solutions for Business_files/323f298613b8b354d9ac10dda89321e9.jpg" class="block-anylogic__tabs-image-mobile" title="Simulation model animation">
+		<h3>Animation and visualization</h3>
+		<div class="block-anylogic__tabs-content">
+			<ul>
+				<li>Convert flowcharts into interactive movies with spectacular 3D and 2D graphics.</li>
+				<li>Present your simulation models to stakeholders in a visually attractive and self-explanatory way.</li>
+				<li>Use the extensive set of graphical objects to visualize vehicles, staff, equipment, buildings, and other items and processes related to your business.</li>
+				<li>Import custom 3D models, images, CAD drawings, and shape files into your simulations.</li>
+				<li>Make your simulation models interactive by adding intuitive navigation and controls.</li>
+				<li>Turn your simulations into comprehensive management dashboards.</li>
+			</ul>
+		</div>
+ <a href="https://www.anylogic.com/features/" class="button button_blue">Read more</a> </article> <aside><img alt="Simulation model animation" src="./AnyLogic_ Simulation Modeling Software Tools &amp; Solutions for Business_files/323f298613b8b354d9ac10dda89321e9.jpg" title="Simulation model animation"></aside>
+	</div>
+</div>
+<div class="block-anylogic__tab-wrap" id="tab3">
+	<div class="block-anylogic__tab">
+ <article> <img alt="Simulation in different industries" src="./AnyLogic_ Simulation Modeling Software Tools &amp; Solutions for Business_files/2eccee98b83b9e2ebeb7be1de62cd10f.jpg" class="block-anylogic__tabs-image-mobile" title="Simulation in different industries">
+		<h3>Industry-specific libraries</h3>
+		<div class="block-anylogic__tabs-content">
+			<ul>
+				<li><a href="https://www.anylogic.com/resources/libraries/process-modeling-library/"><b>Process Modeling Library</b></a> for generic business processes or workflows.</li>
+				<li><a href="https://www.anylogic.com/resources/libraries/fluid-library/"><b>Fluid Library</b></a> to simulate bulk cargo and liquid transfer in industries like mining or oil &amp; gas.</li>
+				<li><a href="https://www.anylogic.com/resources/libraries/rail-library/"><b>Rail Library</b></a> for rail transportation, terminals, and yards.</li>
+				<li><a href="https://www.anylogic.com/resources/libraries/pedestrian-library/"><b>Pedestrian Library</b></a> for pedestrian flows in airports, stadiums, stations, or shopping malls.</li>
+				<li><a href="https://www.anylogic.com/resources/libraries/road-traffic-library/"><b>Road Traffic Library</b></a> for car, truck, and bus movement on roads, parking lots, and factory sites.</li>
+				<li><a href="https://www.anylogic.com/resources/libraries/material-handling-library/"><b>Material Handling Library</b></a> for manufacturing and warehouse processes.</li>
+			</ul>
+		</div>
+ <a href="https://www.anylogic.com/resources/libraries/process-modeling-library/" class="button button_blue">Read more</a> </article> <aside><img alt="Simulation in different industries" src="./AnyLogic_ Simulation Modeling Software Tools &amp; Solutions for Business_files/2eccee98b83b9e2ebeb7be1de62cd10f.jpg" title="Simulation in different industries"></aside>
+	</div>
+</div>
+<div class="block-anylogic__tab-wrap" id="tab4">
+	<div class="block-anylogic__tab">
+ <article> <img alt="Simulation on a GIS map" src="./AnyLogic_ Simulation Modeling Software Tools &amp; Solutions for Business_files/500956a42fbf73412071c652c6269ac0.jpg" class="block-anylogic__tabs-image-mobile" title="Simulation on a GIS map">
+		<h3>GIS maps integration</h3>
+		<div class="block-anylogic__tabs-content">
+			<ul>
+				<li>AnyLogic simulation software provides the unique ability to use GIS maps within your simulation models.</li>
+				<li>Maps can be applied to model systems like supply chains, logistics networks, and other cases when you need to take into account locations, roads, routes, or regions.</li>
+				<li>Built-in search in the style of Google Maps allows you to easily locate cities, streets, roads, hospitals, shops, and bus stops by using the map data. The search works both when you design the model and when the model is running.</li>
+				<li>Simulation model elements can be placed on the map and moved along existing roads and routes based on real spatial data.</li>
+			</ul>
+		</div>
+ <a href="https://www.anylogic.com/features/" class="button button_blue">Read more</a> </article> <aside><img alt="Simulation analytics in the cloud" src="./AnyLogic_ Simulation Modeling Software Tools &amp; Solutions for Business_files/500956a42fbf73412071c652c6269ac0.jpg" title="Simulation analytics in the cloud"></aside>
+	</div>
+</div>
+<div class="block-anylogic__tab-wrap" id="tab5">
+	<div class="block-anylogic__tab">
+ <article> <img alt="Simulation analytics in the cloud" src="./AnyLogic_ Simulation Modeling Software Tools &amp; Solutions for Business_files/deb8725f1b8fb5b8e2fdf8c423c2bd42.jpg" class="block-anylogic__tabs-image-mobile" title="Simulation analytics in the cloud">
+		<h3>Simulation in the cloud</h3>
+		<div class="block-anylogic__tabs-content">
+			<p>
+				 AnyLogic is the only simulation modeling tool to offer full range of cloud technologies, changing the way people run models.
+			</p>
+			<ul>
+				<li>Use any device to run your simulation model, including phones and tablets.</li>
+				<li>Provide online simulation analytics to your clients with web dashboards.</li>
+				<li>Leverage high-performance cloud computing for complex simulation experiments.</li>
+				<li>Deliver simulation models privately to your clients using secure web repository.</li>
+				<li>Share simulations publicly with the community and collaborate in the cloud.</li>
+			</ul>
+		</div>
+ <a href="https://www.anylogic.com/features/cloud/" class="button button_blue">Read more</a> </article> <aside><img alt="Simulation analytics in the cloud" src="./AnyLogic_ Simulation Modeling Software Tools &amp; Solutions for Business_files/deb8725f1b8fb5b8e2fdf8c423c2bd42.jpg" title="Simulation analytics in the cloud"></aside>
+	</div>
+</div>
+ </section>
+<section class="block-review block row">
+	<div class="block-review__prev icon_arrow-prev"></div>
+	<div class="block-review__next icon_arrow-next"></div>
+	<ul class="block-review__list">
+			<li class="block-review__item">
+			<div class="block-review__content-quote"></div>
+			<div class="block-review__content">We use AnyLogic to understand better, improve and demonstrate how complex systems work. My personal favorite aspect of AnyLogic is the fact that it compiles the simulation models into a general purpose, fully object-oriented program language, like Java. Which allows us to embed optimization algorithms into simulations without writing unnecessary code.</div>
+			<div class="block-review__wrap">
+				<div class="block-review__author">
+					<div class="block-review__content-arrow"></div>
+					<div class="block-review__author-name">Onur Dulgeroglu, Senior Analytics Engineer,<br><span>General Electric</span></div>
+					<div class="block-review__author-logo"><img src="./AnyLogic_ Simulation Modeling Software Tools &amp; Solutions for Business_files/320f48f64c37b1d875c608ccfbaae1e0.png" alt="General Electric" title="General Electric"></div>
+				</div>
+			</div>
+		</li>
+			<li class="block-review__item">
+			<div class="block-review__content-quote"></div>
+			<div class="block-review__content">I go back with AnyLogic to the very beginning: over ten years now. Ten years ago, AnyLogic was what I call the only industrial strength product that had a hope of doing both system dynamics, agent based, and discrete event in one package. As best as I can tell, it’s still the only package that has that capability. As we do more especially in the realm of agent based models, there are some open-source tools, but none of them has anything close to the functionality that AnyLogic does. </div>
+			<div class="block-review__wrap">
+				<div class="block-review__author">
+					<div class="block-review__content-arrow"></div>
+					<div class="block-review__author-name">Dr. Mark Paich, Director,<br><span>PwC</span></div>
+					<div class="block-review__author-logo"><img src="./AnyLogic_ Simulation Modeling Software Tools &amp; Solutions for Business_files/8c8d93e126d8165c7cec739e845e8f4b.png" alt="PwC" title="PwC"></div>
+				</div>
+			</div>
+		</li>
+			<li class="block-review__item">
+			<div class="block-review__content-quote"></div>
+			<div class="block-review__content">AnyLogic was the clear choice after comprehensive evaluation of multiple systems and further prototyping in those that were shortlisted.  Furthermore, it continues to impress the deeper we get. There's no doubt the right simulation and modelling tool was selected for the majority of our current and future needs.</div>
+			<div class="block-review__wrap">
+				<div class="block-review__author">
+					<div class="block-review__content-arrow"></div>
+					<div class="block-review__author-name">Jay Ta'ala, Senior Modeller, Supply Chain Analytics,<br><span>BHP Billiton</span></div>
+					<div class="block-review__author-logo"><img src="./AnyLogic_ Simulation Modeling Software Tools &amp; Solutions for Business_files/efd0a67c3f196d19621dce0dc50ef751.png" alt="BHP Billiton" title="BHP Billiton"></div>
+				</div>
+			</div>
+		</li>
+			<li class="block-review__item">
+			<div class="block-review__content-quote"></div>
+			<div class="block-review__content">We chose AnyLogic to tackle our large complex problem because of the multimethod models you can use, the mix of agent based, discrete event and system dynamics is a very useful combination. My favorite part of AnyLogic is all the dashboard features, the great charts and business intelligence you can get from the agents that are working in the model.</div>
+			<div class="block-review__wrap">
+				<div class="block-review__author">
+					<div class="block-review__content-arrow"></div>
+					<div class="block-review__author-name">Kyle Johnson, Global Business Services, Advanced Analytics and Optimization,<br><span>IBM Global Business Services</span></div>
+					<div class="block-review__author-logo"><img src="./AnyLogic_ Simulation Modeling Software Tools &amp; Solutions for Business_files/95083b913ab1379ca8bef0181a589b1b.png" alt="IBM Global Business Services" title="IBM Global Business Services"></div>
+				</div>
+			</div>
+		</li>
+			<li class="block-review__item">
+			<div class="block-review__content-quote"></div>
+			<div class="block-review__content">AnyLogic has a nice object-oriented feature that allows you to create a component and reuse it, which is very useful to us, plus, the user interface has many built in charts. The most valuable feature of AnyLogic to me is to export a model, and let anyone run it on their computer without a software license.</div>
+			<div class="block-review__wrap">
+				<div class="block-review__author">
+					<div class="block-review__content-arrow"></div>
+					<div class="block-review__author-name">Victor Chang, Software Engineer,<br><span>Intel</span></div>
+					<div class="block-review__author-logo"><img src="./AnyLogic_ Simulation Modeling Software Tools &amp; Solutions for Business_files/1720daf22f11f6bab3215e55cf32f77e.png" alt="Intel" title="Intel"></div>
+				</div>
+			</div>
+		</li>
+			<li class="block-review__item">
+			<div class="block-review__content-quote"></div>
+			<div class="block-review__content">We use simulation tools, including AnyLogic, to analyze alternative capital investment solutions in order to help decide on the best investment decision. AnyLogic has helped with that decision process by providing our company with a tool that is flexible/adaptable to build models in different groups within our company using the team license server.  We can easily use and combine multiple simulation methods to create the best modeling approach for each problem.  </div>
+			<div class="block-review__wrap">
+				<div class="block-review__author">
+					<div class="block-review__content-arrow"></div>
+					<div class="block-review__author-name">Jeremiah Dirnberger,<br><span>CSX Technology</span></div>
+					<div class="block-review__author-logo"><img src="./AnyLogic_ Simulation Modeling Software Tools &amp; Solutions for Business_files/88c1b00df2906fe5ed58962db942858a.png" alt="CSX Technology" title="CSX Technology"></div>
+				</div>
+			</div>
+		</li>
+			<li class="block-review__item">
+			<div class="block-review__content-quote"></div>
+			<div class="block-review__content">I've used AnyLogic and a number of other simulation tools as part of hospital services design over many years. I prefer AnyLogic for its flexibility and multimodal capabilities and wholeheartedly recommend it.</div>
+			<div class="block-review__wrap">
+				<div class="block-review__author">
+					<div class="block-review__content-arrow"></div>
+					<div class="block-review__author-name">Keith Stockman,<br><span>Monash Health</span></div>
+					<div class="block-review__author-logo"><img src="./AnyLogic_ Simulation Modeling Software Tools &amp; Solutions for Business_files/94fec3904d8d919f23884d6cfbfe1273.png" alt="Monash Health" title="Monash Health"></div>
+				</div>
+			</div>
+		</li>
+			<li class="block-review__item">
+			<div class="block-review__content-quote"></div>
+			<div class="block-review__content">In my opinion, AnyLogic is one of the most flexible and efficient simulation tools on the market, that can be applied for solving operational and strategic tasks in a wide range of industries, including retail and logistics. </div>
+			<div class="block-review__wrap">
+				<div class="block-review__author">
+					<div class="block-review__content-arrow"></div>
+					<div class="block-review__author-name">Andrey Semenov, Sr. Manager, Supply Chain Management,<br><span>Deloitte </span></div>
+					<div class="block-review__author-logo"><img src="./AnyLogic_ Simulation Modeling Software Tools &amp; Solutions for Business_files/391cd3e44daa60a265ea8d8d28e48355.png" alt="Deloitte " title="Deloitte "></div>
+				</div>
+			</div>
+		</li>
+			<li class="block-review__item">
+			<div class="block-review__content-quote"></div>
+			<div class="block-review__content">Although I am still a new user of AnyLogic, I have been very impressed with its flexibility, ease of use, and the multimethod capabilities. AnyLogic’s versatility and standard libraries allow us to address a large number of different business process automation questions very quickly and with one software tool. I also believe the ability to customize ours models with Java code is invaluable when modeling the complex interactions in today’s real-world systems and operations.</div>
+			<div class="block-review__wrap">
+				<div class="block-review__author">
+					<div class="block-review__content-arrow"></div>
+					<div class="block-review__author-name">Dr. Gregory Kott, Principal Research Scientist, PARC. a Xerox Company,<br><span>Xerox</span></div>
+					<div class="block-review__author-logo"><img src="./AnyLogic_ Simulation Modeling Software Tools &amp; Solutions for Business_files/5d5533bb03e0eae2ab650f8309142481.png" alt="Xerox" title="Xerox"></div>
+				</div>
+			</div>
+		</li>
+			<li class="block-review__item">
+			<div class="block-review__content-quote"></div>
+			<div class="block-review__content">I’ve been using AnyLogic for about three or four years now, and I found that it’s probably one of the better solutions out there for really being able to implement models if you don’t necessarily have a very extensive coding background to start with.</div>
+			<div class="block-review__wrap">
+				<div class="block-review__author">
+					<div class="block-review__content-arrow"></div>
+					<div class="block-review__author-name">Joseph Simkins,<br><span>Battelle Memorial Institute</span></div>
+					<div class="block-review__author-logo"><img src="./AnyLogic_ Simulation Modeling Software Tools &amp; Solutions for Business_files/3ed55ade870cb181a85e71f2cf549e90.png" alt="Battelle Memorial Institute" title="Battelle Memorial Institute"></div>
+				</div>
+			</div>
+		</li>
+			<li class="block-review__item">
+			<div class="block-review__content-quote"></div>
+			<div class="block-review__content">AnyLogic support team has been very proactive in supporting my projects and meeting my deadlines. I’ve been working with AnyLogic software less than a month and I'm feeling confident moving forward as I continuously learn a lot from the support team. AnyLogic support team to me is brilliant, fast, energetic and fully equipped with technical knowledge. Fear no more as anyone can easily learn simulation with AnyLogic's perfect support team guidance and user-friendly software. </div>
+			<div class="block-review__wrap">
+				<div class="block-review__author">
+					<div class="block-review__content-arrow"></div>
+					<div class="block-review__author-name">Ching-synn Teo,<br><span>AMD (Advanced Micro Devices, Inc.)</span></div>
+					<div class="block-review__author-logo"><img src="./AnyLogic_ Simulation Modeling Software Tools &amp; Solutions for Business_files/47e5d236909aaac32b2abb19f27c729c.png" alt="AMD (Advanced Micro Devices, Inc.)" title="AMD (Advanced Micro Devices, Inc.)"></div>
+				</div>
+			</div>
+		</li>
+			<li class="block-review__item">
+			<div class="block-review__content-quote"></div>
+			<div class="block-review__content">One of the most important AnyLogic features is the ability to build our own libraries. We only have to build them once, but can use them multiple times in different models.</div>
+			<div class="block-review__wrap">
+				<div class="block-review__author">
+					<div class="block-review__content-arrow"></div>
+					<div class="block-review__author-name">Gunnar Feldmann, Assistant Operations Research Specialist,<br><span>Norfolk Southern Corporation</span></div>
+					<div class="block-review__author-logo"><img src="./AnyLogic_ Simulation Modeling Software Tools &amp; Solutions for Business_files/42652e4e8de61d5cfa03af19a66af65d.png" alt="Norfolk Southern Corporation" title="Norfolk Southern Corporation"></div>
+				</div>
+			</div>
+		</li>
+			<li class="block-review__item">
+			<div class="block-review__content-quote"></div>
+			<div class="block-review__content">We chose AnyLogic because of its flexibility. We have many customers in many industries that have very different requirements because their supply chains are different, and we’ve been very easily able to change our models quickly to interact with the customers. The agent based tool is very powerful for us, our automated robots are highly intelligent, and AnyLogic is able to handle the complexity of the interactions amongst those 500 robots and able to do computations efficiently.</div>
+			<div class="block-review__wrap">
+				<div class="block-review__author">
+					<div class="block-review__content-arrow"></div>
+					<div class="block-review__author-name">Dr. Larry M. Sweet, CTO,<br><span>Symbotic</span></div>
+					<div class="block-review__author-logo"><img src="./AnyLogic_ Simulation Modeling Software Tools &amp; Solutions for Business_files/bc60858a101cd2943b4f2f5bd25e0aaf.png" alt="Symbotic" title="Symbotic"></div>
+				</div>
+			</div>
+		</li>
+			<li class="block-review__item">
+			<div class="block-review__content-quote"></div>
+			<div class="block-review__content">The benefit of agent-based modeling in AnyLogic is to truly model our supply chain. Each of the agents we use in our simulation can correspond to vessels, distribution centers, ports of loading, ports of discharge, our retailers, etc. with their own behaviors. AnyLogic makes it easy for me to give our many agents their own customizable behaviors and let them interact together in a fully integrated software.</div>
+			<div class="block-review__wrap">
+				<div class="block-review__author">
+					<div class="block-review__content-arrow"></div>
+					<div class="block-review__author-name">Beth Tyrie,<br><span>Fruit of the Loom</span></div>
+					<div class="block-review__author-logo"><img src="./AnyLogic_ Simulation Modeling Software Tools &amp; Solutions for Business_files/b8afc313e1bb4f6dd14731754d5339a9.png" alt="Fruit of the Loom" title="Fruit of the Loom"></div>
+				</div>
+			</div>
+		</li>
+			
+	</ul>
+	<div class="block-review__wrap-button">
+		<a href="https://www.anylogic.com/company/clients/" class="button button_blue">View more</a>
+	</div>
+</section><div id="bxdynamic_agKIaS_end" style="display:none"></div>		<footer class="footer row">
+			<div class="footer__col col1">
+                <div class="logo-bottom"><a href="https://the.anylogic.company/" target="_blank"></a></div>
+                <p>© <a href="https://the.anylogic.company/" target="_blank">The AnyLogic Company</a>&nbsp; | <a class="pr-policy" href="https://www.anylogic.com/upload/privacy_policy/anylogic-privacy-policy.pdf">Privacy Policy</a></p>
+				<a href="https://www.anylogic.com/company/contact-us/" class="button button_white button_s">contact us</a>
+			</div>
+            <div class="search md">
+                <form action="https://www.anylogic.com/search/" method="GET">
+                    <input type="text" placeholder="search" name="q">
+                    <button type="submit" class="search__submit-button icon_zoom" name="s" value="">search</button>
+                </form>
+            </div>
+                         <div id="get-subscribe" class="block-book__subscribe popup mfp-hide">
+	<h3>Sign up for monthly news,<br> learning materials, and product updates</h3>
+        <iframe data-src="https://info.anylogic.com/ANL-Subscribe?lang=en&amp;country=Netherlands&amp;state=" src="./AnyLogic_ Simulation Modeling Software Tools &amp; Solutions for Business_files/saved_resource.html"></iframe><div class="holds-the-iframe"></div>
+</div>	
+			<div class="footer__col col2">
+	<ul itemtype="http://schema.org/SiteNavigationElement">
+		<li><a itemprop="url" href="https://www.anylogic.com/download-free-simulation-software-for-education/">download free simulation software</a></li>
+		<li><a itemprop="url" href="https://cloud.anylogic.com/#/landing">AnyLogic Cloud</a></li>
+		<li><a itemprop="url" href="https://www.anylogistix.com/?utm_source=site&amp;utm_medium=link&amp;utm_campaign=anylogic">anyLogistix supply chain software</a></li>
+		<li><a itemprop="url" href="https://www.anylogic.com/blog/">blog</a></li>
+		<li><a itemprop="url" href="https://www.anylogic.com/use-of-simulation/">use of simulation</a></li>
+	</ul>
+</div>
+<div class="footer__col col3">
+	<ul>
+		<li><a itemprop="url" href="https://www.anylogic.com/use-of-simulation/agent-based-modeling/">agent-based simulation</a></li>
+		<li><a itemprop="url" href="https://www.anylogic.com/use-of-simulation/discrete-event-simulation/">discrete event simulation</a></li>
+		<li><a itemprop="url" href="https://www.anylogic.com/use-of-simulation/system-dynamics/">system dynamics</a></li>
+		<li><a itemprop="url" href="https://www.anylogic.com/resources/libraries/material-handling-library/">material handling library</a></li>
+		<li><a itemprop="url" href="https://www.anylogic.com/highly-automated-production-line-planning-and-optimization/">manufacturing optimization</a></li>
+	</ul>
+</div>
+<div class="footer__col col4">
+	<ul>
+		<li><a itemprop="url" href="https://www.anylogic.com/simulating-ice-cream-production-recognizing-constraints-and-optimizing-production-plan/">manufacturing capacity planning</a></li>
+		<li><a itemprop="url" href="https://www.anylogic.com/resources/articles/agent-based-simulation-of-a-tuberculosis-epidemic/">epidemiology simulation</a></li>
+		<li><a itemprop="url" href="https://www.anylogic.com/using-predictive-analytics-and-simulationt-to-improve-therapeutic-outcomes/">predictive modeling in healthcare</a></li>
+		<li><a itemprop="url" href="https://www.anylogic.com/a-pharmaceutical-company-used-agent-based-modeling-to-decide-on-a-marketing-strategy/">pharmaceutical simulation</a></li>
+		<li><a itemprop="url" href="https://www.anylogic.com/simulation-of-the-frankfurt-airport/">optimizing airport processes</a></li>
+	</ul>
+</div>
+			<div class="footer__col col5">
+				<div class="search">
+					<form action="https://www.anylogic.com/search/" method="GET">
+						<input type="text" placeholder="search" name="q">
+						<button type="submit" class="search__submit-button icon_zoom" name="s" value="">search</button>
+					</form>
+				</div>
+				
+				<div class="social">
+					<ul class="social__list">
+						<li><a target="_blank" href="https://www.facebook.com/pages/AnyLogic-Simulation-Software/219511058067426" class="icon icon_social-fb">Facebook</a></li>
+						<li><a target="_blank" href="https://twitter.com/AnyLogicCo" class="icon icon_social-tw">Twitter</a></li>
+						<li><a target="_blank" href="https://www.linkedin.com/groups/1524407" class="icon icon_social-ln">LinkedIn</a></li>
+						<li><a target="_blank" href="https://www.youtube.com/channel/UCdH-e29FvfphfWmI2EMZPhg" class="icon icon_social-yb">YouTube</a></li>
+					</ul>
+					<div onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;all&#39;, &#39;subscribe&#39;, &#39;footer&#39;, {&#39;hitCallback&#39;: function () {document.location.href}});" href="#get-subscribe" class="social-subscribe popup-link">subscribe to our newsletter</div>
+				</div>
+			</div>
+		</footer>
+				<script data-skip-moving="true" data-main="/local/templates/anylogic/js/main.js?4" src="./AnyLogic_ Simulation Modeling Software Tools &amp; Solutions for Business_files/require.js.download"></script>
+		        
+		<script data-skip-moving="true" type="text/javascript">
+			(function() {
+			 var didInit = false;
+			 function initMunchkin() {
+			   if(didInit === false) {
+				 didInit = true;
+                   Munchkin.init('038-NFP-336',{'domainLevel':2});
+			   }
+			 }
+			 var s = document.createElement('script');
+			 s.type = 'text/javascript';
+			 s.async = true;
+			 s.src = '//munchkin.marketo.net/munchkin.js';
+			 s.onreadystatechange = function() {
+			   if (this.readyState == 'complete' || this.readyState == 'loaded') {
+				 initMunchkin();
+			   }
+			 };
+			 s.onload = initMunchkin;
+			 document.getElementsByTagName('head')[0].appendChild(s);
+			})();
+		</script>
+		<!-- Yandex.Metrika counter -->
+		<script data-skip-moving="true" type="text/javascript">
+			(function (d, w, c) {
+				(w[c] = w[c] || []).push(function() {
+					try {
+						w.yaCounter45635763 = new Ya.Metrika({
+							id:45635763,
+							clickmap:true,
+							trackLinks:true,
+							accurateTrackBounce:true,
+							webvisor:true
+						});
+					} catch(e) { }
+				});
+
+				var n = d.getElementsByTagName("script")[0],
+					s = d.createElement("script"),
+					f = function () { n.parentNode.insertBefore(s, n); };
+				s.type = "text/javascript";
+				s.async = true;
+				s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+				if (w.opera == "[object Opera]") {
+					d.addEventListener("DOMContentLoaded", f, false);
+				} else { f(); }
+			})(document, window, "yandex_metrika_callbacks");
+		</script>
+		<noscript><div><img src="https://mc.yandex.ru/watch/45635763" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+		<!-- /Yandex.Metrika counter -->
+    <script type="text/javascript">if(!window.BX)window.BX={};if(!window.BX.message)window.BX.message=function(mess){if(typeof mess=='object') for(var i in mess) BX.message[i]=mess[i]; return true;};</script>
+<script type="text/javascript">(window.BX||top.BX).message({'JS_CORE_LOADING':'Loading...','JS_CORE_WINDOW_CLOSE':'Close','JS_CORE_WINDOW_EXPAND':'Expand','JS_CORE_WINDOW_NARROW':'Restore','JS_CORE_WINDOW_SAVE':'Save','JS_CORE_WINDOW_CANCEL':'Cancel','JS_CORE_H':'h','JS_CORE_M':'m','JS_CORE_S':'s','JS_CORE_NO_DATA':'- No data -','JSADM_AI_HIDE_EXTRA':'Hide extra items','JSADM_AI_ALL_NOTIF':'All notifications','JSADM_AUTH_REQ':'Authentication is required!','JS_CORE_WINDOW_AUTH':'Log In','JS_CORE_IMAGE_FULL':'Full size','JS_CORE_WINDOW_CONTINUE':'Continue'});</script>
+<script type="text/javascript">(window.BX||top.BX).message({'LANGUAGE_ID':'en','FORMAT_DATE':'DD.MM.YYYY','FORMAT_DATETIME':'DD.MM.YYYY HH:MI:SS','COOKIE_PREFIX':'BITRIX_SM','SERVER_TZ_OFFSET':'10800','SITE_ID':'s1','SITE_DIR':'/'});</script><script type="text/javascript" src="./AnyLogic_ Simulation Modeling Software Tools &amp; Solutions for Business_files/kernel_main_v1.js.download"></script>
+<script type="text/javascript" src="./AnyLogic_ Simulation Modeling Software Tools &amp; Solutions for Business_files/kernel_main_polyfill_promise_v1.js.download"></script>
+<script type="text/javascript" src="./AnyLogic_ Simulation Modeling Software Tools &amp; Solutions for Business_files/loadext.min.js.download"></script>
+<script type="text/javascript" src="./AnyLogic_ Simulation Modeling Software Tools &amp; Solutions for Business_files/extension.min.js.download"></script>
+<script type="text/javascript" src="./AnyLogic_ Simulation Modeling Software Tools &amp; Solutions for Business_files/core_db.min.js.download"></script>
+<script type="text/javascript" src="./AnyLogic_ Simulation Modeling Software Tools &amp; Solutions for Business_files/core_frame_cache.min.js.download"></script>
+<script type="text/javascript">BX.setJSList(['/bitrix/js/main/core/core.js','/bitrix/js/main/core/core_promise.js','/bitrix/js/main/core/core_ajax.js','/bitrix/js/main/json/json2.min.js','/bitrix/js/main/core/core_ls.js','/bitrix/js/main/core/core_fx.js','/bitrix/js/main/session.js','/bitrix/js/main/core/core_window.js','/bitrix/js/main/date/main.date.js','/bitrix/js/main/core/core_popup.js','/bitrix/js/main/core/core_date.js','/bitrix/js/main/utils.js','/bitrix/js/main/polyfill/promise/js/promise.js','/local/templates/anylogic/components/itrade24/subscribe/subscribe/script.js']); </script>
+<script type="text/javascript">BX.setCSSList(['/bitrix/js/main/core/css/core.css','/bitrix/js/main/core/css/core_popup.css','/bitrix/js/main/core/css/core_date.css','/local/templates/anylogic/css/normalize.css','/local/templates/anylogic/css/stuff.css','/local/templates/anylogic/css/main.css','/local/templates/anylogic/css/responsive.css','/local/templates/anylogic/css/print.css','/local/templates/anylogic/css/custom.css']); </script>
+<script type="text/javascript" src="./AnyLogic_ Simulation Modeling Software Tools &amp; Solutions for Business_files/template_fc2e385d07b35fa75c0d04323e729fb5_v1.js.download"></script>
+<script type="text/javascript">var _ba = _ba || []; _ba.push(["aid", "82925c49c37df1f7e4ad8e62eba94a66"]); _ba.push(["host", "www.anylogic.com"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();</script>
+
+
+<script async="" src="./AnyLogic_ Simulation Modeling Software Tools &amp; Solutions for Business_files/js"></script><script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+    
+                gtag('config', 'AW-949013532');
+            </script><script>
+            !function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
+            },s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='//static.ads-twitter.com/uwt.js',
+                a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
+            // Insert Twitter Pixel ID and Standard Event data below
+            twq('init','o0xsz');
+            twq('track','PageView');
+        </script><script>
+            !function(f,b,e,v,n,t,s)
+            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+                n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+                if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+                n.queue=[];t=b.createElement(e);t.async=!0;
+                t.src=v;s=b.getElementsByTagName(e)[0];
+                s.parentNode.insertBefore(t,s)}(window, document,'script',
+                'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '239775930272817');
+            fbq('track', 'PageView');
+        </script><script> _linkedin_partner_id = "250098"; window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || []; window._linkedin_data_partner_ids.push(_linkedin_partner_id); </script><script> (function(){var s = document.getElementsByTagName("script")[0]; var b = document.createElement("script"); b.type = "text/javascript";b.async = true; b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js"; s.parentNode.insertBefore(b, s);})(); </script><script>(function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.11&appId=250139135521361';
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));</script><script>
+                    var ct_checkjs_val = '75af304e9be74c12e8c985645154808d', ct_date = new Date(), 
+                    ctTimeMs = new Date().getTime(),
+                    ctMouseEventTimerFlag = true, //Reading interval flag
+                    ctMouseData = [],
+                    ctMouseDataCounter = 0;
+
+                    function ctSetCookie(c_name, value) {
+                        document.cookie = c_name + '=' + encodeURIComponent(value) + '; path=/';
+                    }
+
+                    ctSetCookie('ct_ps_timestamp', Math.floor(new Date().getTime()/1000));
+                    ctSetCookie('ct_fkp_timestamp', '0');
+                    ctSetCookie('ct_pointer_data', '0');
+                    ctSetCookie('ct_timezone', '0');
+
+                    setTimeout(function(){
+                        ctSetCookie('ct_timezone', ct_date.getTimezoneOffset()/60*(-1));
+                        ctSetCookie('ct_checkjs', ct_checkjs_val);  
+                    },1000);
+
+                    //Writing first key press timestamp
+                    var ctFunctionFirstKey = function output(event){
+                        var KeyTimestamp = Math.floor(new Date().getTime()/1000);
+                        ctSetCookie('ct_fkp_timestamp', KeyTimestamp);
+                        ctKeyStopStopListening();
+                    }
+
+                    //Reading interval
+                    var ctMouseReadInterval = setInterval(function(){
+                        ctMouseEventTimerFlag = true;
+                    }, 150);
+                        
+                    //Writting interval
+                    var ctMouseWriteDataInterval = setInterval(function(){
+                        ctSetCookie('ct_pointer_data', JSON.stringify(ctMouseData));
+                    }, 1200);
+
+                    //Logging mouse position each 150 ms
+                    var ctFunctionMouseMove = function output(event){
+                        if(ctMouseEventTimerFlag == true){
+                            
+                            ctMouseData.push([
+                                Math.round(event.pageY),
+                                Math.round(event.pageX),
+                                Math.round(new Date().getTime() - ctTimeMs)
+                            ]);
+                            
+                            ctMouseDataCounter++;
+                            ctMouseEventTimerFlag = false;
+                            if(ctMouseDataCounter >= 100){
+                                ctMouseStopData();
+                            }
+                        }
+                    }
+
+                    //Stop mouse observing function
+                    function ctMouseStopData(){
+                        if(typeof window.addEventListener == 'function'){
+                            window.removeEventListener('mousemove', ctFunctionMouseMove);
+                        }else{
+                            window.detachEvent('onmousemove', ctFunctionMouseMove);
+                        }
+                        clearInterval(ctMouseReadInterval);
+                        clearInterval(ctMouseWriteDataInterval);                
+                    }
+
+                    //Stop key listening function
+                    function ctKeyStopStopListening(){
+                        if(typeof window.addEventListener == 'function'){
+                            window.removeEventListener('mousedown', ctFunctionFirstKey);
+                            window.removeEventListener('keydown', ctFunctionFirstKey);
+                        }else{
+                            window.detachEvent('mousedown', ctFunctionFirstKey);
+                            window.detachEvent('keydown', ctFunctionFirstKey);
+                        }
+                    }
+
+                    if(typeof window.addEventListener == 'function'){
+                        window.addEventListener('mousemove', ctFunctionMouseMove);
+                        window.addEventListener('mousedown', ctFunctionFirstKey);
+                        window.addEventListener('keydown', ctFunctionFirstKey);
+                    }else{
+                        window.attachEvent('onmousemove', ctFunctionMouseMove);
+                        window.attachEvent('mousedown', ctFunctionFirstKey);
+                        window.attachEvent('keydown', ctFunctionFirstKey);
+                    }
+                    </script>
+
+
+<!--53837286dc02f841fd165c483fa6f423--></body></html>

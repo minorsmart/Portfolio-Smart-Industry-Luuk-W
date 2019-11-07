@@ -1,0 +1,66 @@
+var require = {
+	waitSeconds: 160,
+	paths:{
+		"jquery": "jquery.min",
+		"jquery-ui": "jquery-ui.min",
+        "fotorama": "fotorama.min",
+		"slick": "slick.min",
+		"responsiveTabs": "jquery.responsiveTabs",
+		"masonry": "masonry.pkgd.min",
+		"magnificPopup": "jquery.magnific-popup.min",
+		"selectric": "jquery.selectric",
+		"perfectScrollbar": "perfect-scrollbar.jquery.min",
+		"ionCheckRadio": "ion.checkRadio.min",
+		"autosize": "autosize.min",
+		"sticky": "jquery.sticky-kit.min",
+		"tooltipster": "tooltipster.bundle.min",
+		"placeholder": "jquery.placeholder5",
+		"rypp": "RYPP",
+		"progress": "progress",
+		"analytics": "bb",
+		"rateit": "jquery.rateit",
+		"social": "social"
+	},
+	shim: {
+		"fotorama": {
+			deps: ["jquery"]
+		},
+		"slick": {
+			deps: ["jquery"]
+		},
+		"responsiveTabs": {
+			deps: ["jquery"]
+		},
+		"masonry": {
+			deps: ["jquery"]
+		},
+		"magnificPopup": {
+			deps: ["jquery"]
+		},
+		"selectric": {
+			deps: ["jquery"]
+		},
+		"perfectScrollbar": {
+			deps: ["jquery"]
+		},
+		"ionCheckRadio": {
+			deps: ["jquery"]
+		},
+		"sticky": {
+			deps: ["jquery"]
+		},
+		"rypp": {
+			deps: ["jquery"]
+		},
+		"rateit": {
+			deps: ["jquery"]
+		},			
+		"placeholder": {
+			deps: ["jquery"]
+		},
+	},
+	options_progress: {
+		classname: 'progress',
+		target: document.getElementsByTagName("BODY")[0]
+	}
+};
