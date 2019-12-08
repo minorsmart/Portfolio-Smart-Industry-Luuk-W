@@ -1,0 +1,14 @@
+input[type=text] {
+    padding: 10px
+  }
+
+input[type=button] {
+    background-color: rgb(121, 121, 129);
+    border;none;
+    padding: 15px 30px;
+    text-align: right;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    
+  }

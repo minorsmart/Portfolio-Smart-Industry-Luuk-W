@@ -1,139 +1,837 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>Mijn website</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<script type="text/javascript" src="uitklappen.js"> </script>
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="style 2.css">
-<link rel="stylesheet" href="style 3.css">
-<link rel="stylesheet" href="style 4.css">
-<!--Webpage icon in searchbar-->
-<link rel="icon" href="https://img.icons8.com/nolan/64/000000/resume.png">
 
-<!--Icons in front of tabs-->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+   
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+     <!-- Site Metas -->
+    <title>Portfolio Luuk Wenting</title>  
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .accordjon {
+          background-color: #eee;
+          color: #444;
+          cursor: pointer;
+          padding: 18px;
+          width: 100%;
+          border: none;
+          text-align: left;
+          outline: none;
+          font-size: 15px;
+          transition: 0.4s;
+        }
+        
+        .active, .accordjon:hover {
+          background-color: #ccc; 
+        }
+        
+        .panel {
+          padding: 0 18px;
+          display: none;
+          background-color: white;
+          overflow: hidden;
+        }
+        </style>
 
-</style>
-<body>
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/Smart.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/smart industry.jpg">
 
-<!-- Navbar -->
-<div class="w3-top">
-  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
-    <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Over mij</a>
-    <a href="SmartStart.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Smart Start</a>
-    <a href="SmartBusiness.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Smart Business</a>
-    <a href="SmartConnection.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Smart Connection</a>
-    <a href="SmartTechnology.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Smart Technology</a>
-    <a href="SmartProject.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Smart Project</a>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/styles gemene deler.css">
     
-</div>
-    
-  </div>
-  <p></p>
-    <div class="w3-row w3-padding-64">
-      <div class="w3-threethird w3-container">
+        
+    <script src="js/modernizr.js"></script> <!-- Modernizr -->
+    <script src="js/script gemene deler.js"></script>
 
-          <h1>Mijn Portfolio</h1>
-           <p> Welkom op de website van Mijn Portfolio voor de minor Smart Industry. Op deze website zal ik aangeven welke competenties ik heb ontwikkeld tijdens deze minor. De competenties die belangrijk zijn in deze minor zijn: </p>
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body id="page-top" class="politics_version">
+
+    <!-- LOADER -->
+    <div id="preloader">
+        <div id="main-ld">
+			<div id="loader"></div>  
+		</div>
+    </div><!-- end loader -->
+    <!-- END LOADER -->
+	
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+			<img class="img-fluid" src="images/logo.png" alt="" />
+		</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger active" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">Over Mij</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#services">Smart Industry Aspecten</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#portfolio">Opdrachten Smart Industry</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#testimonials">Competenties</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#blog">Excursies</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+	
+	<section id="home" class="main-banner parallaxie" style="background: url('uploads/banner-01.jpg')">
+		<div class="heading">
+			<h1>Welkom op mijn website</h1>
+			<p>Op deze website zal ik aangeven welke competenties ik heb ontwikkeld tijdens deze minor. Ook staan op deze website de verscheidene opdrachten, cursussen en bedrijfsbezoeken die ik heb mogen doen bij de minor Smart Industry</p>
+			<h3 class="cd-headline clip is-full-width">
+				<span>SMART</span>
+				<span class="cd-words-wrapper">
+					<b class="is-visible">Start</b>
+					<b>Business</b>
+					<b>Connection</b>
+                    <b>Technology</b>
+                    <b>Project</b>
+				</span>
+			</h3>
+		</div>
+	</section>
+
+	<svg id="clouds" class="hidden-xs" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 85 100" preserveAspectRatio="none">
+        <path d="M-5 100 Q 0 20 5 100 Z
+            M0 100 Q 5 0 10 100
+            M5 100 Q 10 30 15 100
+            M10 100 Q 15 10 20 100
+            M15 100 Q 20 30 25 100
+            M20 100 Q 25 -10 30 100
+            M25 100 Q 30 10 35 100
+            M30 100 Q 35 30 40 100
+            M35 100 Q 40 10 45 100
+            M40 100 Q 45 50 50 100
+            M45 100 Q 50 20 55 100
+            M50 100 Q 55 40 60 100
+            M55 100 Q 60 60 65 100
+            M60 100 Q 65 50 70 100
+            M65 100 Q 70 20 75 100
+            M70 100 Q 75 45 80 100
+            M75 100 Q 80 30 85 100
+            M80 100 Q 85 20 90 100
+            M85 100 Q 90 50 95 100
+            M90 100 Q 95 25 100 100
+            M95 100 Q 100 15 105 100 Z">
+        </path>
+    </svg>
+
+    <div id="about" class="section wb">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                                            
+                        <h2>Over mij</h2>
+                        <p> Mijn naam is Luuk Wenting en ik zit in het vierde jaar van mijn studie Finance and Control. In dit laatste jaar van mijn studie krijg ik het eerste halfjaar de kans om me te specialiseren. Ik heb ervoor gekozen om me te specificeren in Smart Industries. Bij Smart Industries ga ik me specialiseren in de nieuwste tehnologiën en leer ik deze ook toepassen. </p>
+
+                       
+                </div><!-- end col -->
+
+                <div class="col-md-6">
+                    <div class="right-box-pro wow fadeIn">
+                        <img src="uploads/about_04.jpg" alt="" class="img-fluid img-rounded">
+                    </div><!-- end media -->
+                </div><!-- end col -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->
+	
+    <div id="services" class="section lb">
+        <div class="container">
+            <div class="section-title text-left">
+                <h3>Smart Industry Aspecten</h3>
+                <p>Deze halfjaarlange specialisatie ofwel deze minor bestaat uit verschillende aspecten. Elk van deze aspecten zal ik hieronder kort toelichten</p>
+            </div><!-- end title -->
+
+            <div class="row">
+				<div class="col-md-4">
+                    <div class="services-inner-box">
+						<div class="ser-icon">
+							<i class="flaticon-seo"></i>
+						</div>
+						<h2>Smart Start</h2>
+						<p>Het doel van Smart Start is om voor jezelf en anderen kennis te ontwikkelen over Smart Industry. Deze kennis moet van de hoogste kwaliteit zijn en voor zoveel mogelijk mensen toegankelijk. Daarom wordt er bij dit aspect gekozen voor Open Science als uitgangspunt.</p>
+					</div>
+                
+                </div><!-- end col -->
+				<div class="col-md-4">
+                    <div class="services-inner-box">
+						<div class="ser-icon">
+							<i class="flaticon-process"></i>
+						</div>
+						<h2>Smart Business</h2>
+						<p>Het doel van Smart Business is om kennis te vergaren die toepasbaar zijn op organisaties. Het gaat hierbij vooral om procesoptimalisatie en het beschrijven van business modellen </p>
+					</div>
+                </div><!-- end col -->
+				<div class="col-md-4">
+                    <div class="services-inner-box">
+						<div class="ser-icon">
+							<i class="flaticon-discuss-issue"></i>
+						</div>
+						<h2>Smart Connection</h2>
+						<p>Bij Smart Connection worden er nieuwe technologieën geleerd op het gebied van web, data, cloud en AI. </p>
+					</div>
+                </div><!-- end col -->
+				<div class="col-md-4">
+                    <div class="services-inner-box">
+						<div class="ser-icon">
+							<i class="flaticon-idea"></i>
+						</div>
+						<h2>Smart Technology</h2>
+						<p>Bij Smart Technology wordt er vooral gekeken naar hoe nieuwe technologieën kunnen worden teogepast bij organisaties. Het betreft hier technologieën op het gebied van IoT, Robotica en 3D-printen.</p>
+					</div>
+                </div><!-- end col -->
+				<div class="col-md-4">
+                    <div class="services-inner-box">
+						<div class="ser-icon">
+							<i class="flaticon-idea-1"></i>
+						</div>
+						<h2>Smart Project</h2>
+						<p>Tijdens dit halve jaar specialisatie kreeg ik ook een kans om een project te doen voor een opdrachtgever. Tijdens dit project heb ik de kennis uit deze minor vooral weten toe te passen in de bedrijfsomgeving. Naast het toepassen van de kennis heb ik tijdens dit project ook nieuwe kennis vergaard.</p>
+					</div>
+                </div><!-- end col -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->
+	
+	<div id="portfolio" class="section lb">
+		<div class="container">
+			<div class="section-title text-left">
+                <h3>Smart Industry Opdrachten</h3>
+                <p>Hieronder zal ik per aspect van Smart Industry de verscheidene opdrachten en cursusen tonen die ik heb voltooid.</p>
+
+                
+                <button class="accordjon">Smart Start</button>
+                <div class="panel">
+                <br></br>
+
+                <h5>1. Opdracht relatie Smart Industry en Finance and Control</h5>
+                <P><b>Inleiding</b></P>
+                <p>Voor het onderdeel Smart Start van de minor Smart Industry dient er in week 1 een weekopdracht gemaakt te worden waarin de kruispunten tussen de studie die je op dit moment volgt en de minor worden besproken. Op dit moment volg ik de studie Bedrijfseconomie. In dit literatuuronderzoek zal ik allereerst in het kort bespreken wat de minor Smart Industry en de opleiding Bedrijfseconomie inhoud. Vervolgens zal ik enkele raakvlakken bespreken tussen Smart Industry en Bedrijfseconomie.</p>
+                <P><b>Smart Industry</b></P>
+                <p>“Smart Industry staat voor verregaande digitalisering, het aan elkaar koppelen van producten, machines en mensen én de inzet van nieuwe productietechnologie.” Aldus TNO. TNO is een organisatie, oorspronkelijk opgericht door de overheid, om kennis toepasbaar te maken voor bedrijven en overheden.
+                Onderstaande afbeelding geeft de kern weer van Smart Industry:
+                <img src="images/smart industry aspect.png" alt="" >
+                Smart Industry bestaat uit de kern uit: Manufacturing Technologies (ofwel productie technologieën),Network Centric (ofwel een koppeling van hardware, software en mensen die via een netwerk samenwerken) en Digitalization (ofwel analoge data omzetten naar digitale data).</p>
+                <p><b>Bedrijfseconomie ofwel Finance and Control</b></p>
+                <p>Bedrijfseconomie gaat over het beheersen van de financieel-economische bedrijfsvoering binnen een onderneming. Om dit te kunnen beheersen dien je verstand te krijgen van de financiële cijfers en administratieve processen binnen het bedrijf. Vooral de processen binnen de bedrijfseconomie zijn steeds belangrijker voor de bedrijven. De cijfers van een organisatie kunnen meestal automatisch al vanuit een systeem worden gegenereerd en dit hoeft de bedrijfseconoom vaak niet meer te berekenen. </p>
+                <p><b>De relatie tussen bedrijfseconomie en Smart Industry</b></p>
+                1. Manufacturing Technologies
+                Job Shop en flexible manufacturing
+                <br></br>
+                Bij Manufacturing Technologies draait het onder andere om Flexible Manufacturing. Flexible Manufacturing gaat over het maken van meerdere producten over één machine. Bij bedrijfseconomie heeft dit de term Job Shop. Job Shop zorgt voor een flexibele omgeving die zich makkelijk kan aanpassen. 
+                <br></br>
+                2.Network Centric
+                Risicomanagement en cervitization
+                <br></br>
+                Risicomanagement is een onderdeel van bedrijfseconomie wat als doel heeft om risico’s van een onderneming tijdig te onderkennen, de impact ervan in te schatten en nodige maatregelen te hebben indien nodig. Een groot risico van een onderneming is een niet werkend ERP systeem. Een ERP systeem is software wat binnen een onderneming gebruikt wordt ter ondersteuning van de processen binnen de organisatie. Als een ERP systeem niet meer werkt betekent dit in het ergste geval dat de organisatie niet haar primaire proces kan uitvoeren. Door het ERP systeem te laten lopen bij een andere organisatie draagt de onderneming het risico over naar een andere organisatie en hoeft de kennis over een ERP systeem niet door de onderneming zelf in huis worden gehaald. Dit onderdeel sluit daarom aan bij Certivization van Smart Industry. Doormiddel van certivization kunnen risico’s worden beperkt. 
+                <br></br>
+                3. Digitalization
+                Lean concept
+                <br></br>
+                Bij bedrijfseconomie wordt, onder andere, bekeken hoe een proces, bijvoorbeeld een productieproces lean kan worden gemaakt. Het lean concept betekent in het kort het volgende:
+                -Verspillingen en verliezen van een proces direct elimineren;
+                -Niet waarde-toevoegende activiteiten zoveel mogelijk reduceren;
+                -Waarde-toevoegende activiteiten optimaliseren.
+                Dit valt bij Smart Industry onder het onderwerp Smart Working. Doormiddel van automatisering en het gebruiken van de nieuwste technologieën kan een proces lean worden. (Lean Six Sixma, 2019) 
+                Ook kan doormiddel van het automatiseren van de keten het proces zo worden gemaakt dat er geen voorraden meer aanwezig zijn in een proces. Bij bedrijfseconomie heeft dit de naam JUT (just in time management). Dit houdt in dat de leverancier precies op het moment levert wanneer de organisatie het nodig heeft. Door dit precies op elkaar af te stemmen ontstaan er geen tussenvoorraden en wordt het proces van de organisatie een stukje Leaner.
+ 
+                <br></br>
+                4. Management Control
+                <br></br>
+                “Het vraagstuk van (management)control gaat over de vraag hoe de opdrachtgever (principal) op basis van enerzijds verschillende doeleinden en anderzijds onvolledige informatie gedrag van de opdrachtnemer (agent) kan sturen zodat de opdrachtnemer handelt in het belang van de opdrachtgever.” (House of Control, 2010-2019). Management Control kan worden geoptimaliseerd door het toepassen van digitalisatie. Hier worden bijvoorbeeld gegevens van een proces opgeslagen door een computer en kan er niet “gelogen” worden door de opdrachtgever. 
+                <br></br>
+               <b>Bibliografie</b>
+               House of Control. (2010-2019). http://www.house-of-control.nl/vijfkrachtenmodel-porter.html. Opgehaald van House of Control: http://www.house-of-control.nl/vijfkrachtenmodel-porter.html
+                Lean Six Sixma. (2019). Lean Six Sigma wat is lean. Opgehaald van Website van Lean Six Sigma: Sixsigma.nl/wat-is-lean
+                TNO. (2017). Smart Industry door TNO. Opgehaald van Website van TNO: https://www.tno.nl/nl/aandachtsgebieden/industrie/roadmaps/semiconductor-equipment/smart-industry/ </P>
+                <br></br>
+                <h5>2. Opdracht Smart Industry Story</h5>
+                <p>Voor een Projectpartner naar keuze kregen wij in week twee de mogelijkheid om een Smart Industry Story te bedenken. Doordat de opdracht geen vaste lijn had, hadden we zelf de vrijheid om iets te creëren voor de opdrachtgever. Uiteindelijk heb ik samen met twee anderen, die deze minor volgen, onderzoek gedaan over Smart City Duiven voor de gemeente Duiven</p>
+                <p><a href= "https://www.google.com/maps/d/edit?mid=1u7lPmcVPe7aDxfYZbDXnGfFkz-G8knrV&ll=51.95191310704081%2C6.009699800000021&z=14 "target ="blank"> klik hier om deze opdracht te bekijken</a></p>
+                <br></br>
+                <h5>3. Opdracht Smart Research Value Proposition </h5>
+        
+                <ul style="list-style-type: circle;">
+                <li><p><a href= "https://www.zotero.org/"target ="blank"> Zotero,</a></p> Zotero is een tool die je aan kan sluiten op je internetbrowser. Als je theorie op aan het zoeken bent via je internetbrowser voor je onderzoek kun je doormiddel van Zotero de stukken theorie eenvoudig opslaan op je computer. Ook maakt deze tool het mogelijk om referenties te beheren en uit te wisselen.</li>
+                <li><p><a href= "https://todoist.com/?lang=nl"target ="blank"> Todoist,</a></p> Todoist is een tool die een duidelijke takenlijst creëert. Hierdoor is het makkelijker om je aan een planning te houden en wordt het overzichtelijk wat er nog gedaan moet worden voor de einddatum. Ook laat de  tool zien welke taak de meeste prioriteit heeft.</li>
+                <li><p><a href= "http://deepdive.stanford.edu/"target ="blank"> Deepdyve,</a></p> Via Deepdyve kunnen veel verschillende wetenschappelijke artikelen worden gevonden die gemaakt zijn door academici.</li>
+                <li><p><a href= "https://scholar.google.nl/"target ="blank"> Google Scholar,</a></p> Google scholar is een zoekmachine die de volledige tekst van wetenschappelijke artikelen over de hele wereld doorzoekbaar maakt.</li>
+                <li><p><a href= "https://www.mindmup.com/"target ="blank"> Mindmup,</a></p> Mindmup is een online tool dat het mogelijk maakt om samen met anderen een mindmap te maken. Vooral bij de start van een onderzoek kan door deze tool worden ingespeeld op het creatieve vermogen van de onderzoekers.</li> </ul></p> 
+                <br></br>
+                <h5>3. Opdracht Lean, Agile en Smart Industry </h5>
+                <p>Voor deze opdracht heb ik gekeken naar wat Smart Industry kan toevoegen aan Lean en Agile in ondernemingen. Hiervoor heb ik een Prezi gemaakt die je <a href= "https://prezi.com/view/fO8U1KlBidbfdrQGV9nv/"target ="blank"> hier,</a> kan bekijken</p>
+                <h5>4. Opdracht Smart Supply Chain management</h5>
+                <p>Voor deze opdracht heb ik gekeken naar wat supply management is en hoe dit betrokken kan worden bij Smart Industry. Supply Chain management bestaat uit drie verschillende stromen. Voor elke stroom heb ik een voorbeeld opgezocht die laat zien hoe Smart Solutions kunnen bijdragen aan een vebeterde supply chain: <p>
+                <ul style="list-style-type: circle;">
+                 <li></p>De productstroom: Het warenhuis van JD maakt gebruik van een intelligent apparatuurbeheers- en controlesysteem dat goederen laadt en lost met onbemande geautomatiseerde voertuigen en het werk doet van ongeveer 180 menselijke werknemers. Pakketten worden door de faciliteit getransporteerd op een geautomatiseerde transportband. De hele faciliteit verwerkt ongeveer 9.000 pakketten per uur, wat ongeveer vier keer de capaciteit is die traditionele, door mensen gerunde sorteercentra kunnen verwerken.<p></li><a href= "https://www.youtube.com/watch?v=udRYxhS4-Ow"target ="blank"> (Filmpje/bron)</a>
+                            
+                 <li></p> De informatiestroom: doormiddel van een production tracker. Dit is een geavanceerde tool voor business intelligence waarmee batches door het hele deur-tot-deur-proces kunt volgen, van het ontvangen van een grondstof tot de verzending ervan, in realtime. De productietrackingsoftware omvat zowel productie- als niet-productiefasen van het proces (productielijnen, inventaris, kwaliteitslaboratoria ...). Op deze manier weet je altijd precies waar een materiaal zich bevindt - maar niet alleen dat. Je kunt ook historische gegevens analyseren en de bevindingen gebruiken voor procesoptimalisatie.<p></li><a href= "https://www.productoo.com/wp-content/uploads/2018/10/01-productoo-batch-tracker-main-1024x719.png"target ="blank"> (Afbeelding/bron)</a>
+                <li></p>De financiënstroom: Doormiddel van Robotic Proces Automatisation. Verhoogt de juistheid, verkleind de fraude in een financieel proces.<p></li><a href= "https://www.youtube.com/watch?v=Tk3gP27YgWY"target ="blank"> (bron/filmpje)
+                </a>
+                </ul>
+                 <br></br>
+                 <h5>4. Opdracht Blockchain in de Supply Chain </h5>
+                 <p>Voor de les van Smart Start in week 5 hebben wij,  Jan, Ronald, Vincent en ik, een infographic gemaakt over het gebruiken van blockchain in de supply chain. Hieronder staan twee links naar de infographic. Één link om de infographic te bekijken** en één link om de infographic te bewerken*** .</p>
+                <p>* Deze infographic is gemaakt met Canva: Canva is een vereenvoudigde website voor grafisch ontwerptool, opgericht in 2012. Het gebruikt een drag-and-drop-indeling en biedt toegang tot foto's, vectorafbeeldingen, grafische afbeeldingen en lettertypen.<a href= "https://www.canva.com/"target ="blank">Canva.com</a> </p>
+                <a href= "https://www.canva.com/design/DADnOExp0so/Ay0XFOo7NaSXlxxkAyxoDg/view?utm_content=DADnOExp0so&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton"target ="blank"> **Link om te bekijken</a> <p> 
+                <a href= "https://www.canva.com/design/DADnOExp0so/share/preview?token=hfNu9e2WULDitTIQhWySUA&role=EDITOR&utm_content=DADnOExp0so&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton"target ="blank"> ***Link om te bewerken</a> <p>
+
+                
+                    
+                  
+                  <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#portfolio"><b>Terug naar Opdrachten Smart Industry</b></a>
+                  </li>
+                </div>
+                <button class="accordjon">Smart Business</button>
+                <div class="panel">
+                <br><br>
+                <h5>1 Opdracht Video Hello World.<h5>
+                <p>In de eerste week van de minor heb ik voor het aspect Smart Business een video gemaakt. In deze video staat:
+
+                - Waarom vind je het onderwerp Smart Industry boeiend?
+                - Wat wil je met het onderwerp gaan doen?
+                - Over welke relevante kennis en vaardigheden beschik je al en op welke vlakken ga je jezelf ontwikkelen?
+                - Welke partners en faciliteiten heb je nodig en hoe vind je die?</p>
+
+                        <iframe width="465" height="315" src="https://www.youtube.com/embed/h0iWYgPXgzI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <hr>
+                <br></br>
+                <h5>2. Opdracht Smart Working You </h5>
+                <p>Tijdens deze opdracht moest je om tafel emt mede minor-genoten om je verwachtingen helder te krijgen over de minor Smart Industry. Onderstaand model moest ingevuld worden (dit model is ingevuld over mij)<img src="images/Working You.JPG" alt="" height= 100% width= 100% ></p>
+                <br><br>
+                <h5>3. Opdracht Smart Products Klant voor een verzekeraar</h5>
+                <p>Hoe kan een verzekeraar met behulp van IoT haar kosten verlagen?
+                <i>Antwoord:
+                    1 Veel auto’s hebben tegenwoordig een computer ingebouwd die aan geeft welk onderdeel kapot is. Deze computer zou de informatie in een keer door kunnen spelen naar de verzekering zodat de verzekering niet meer de vraag van de klant hoeft te verwerken.
+                    2 Door woningen uit de rusten met sensoren die water kunnen detecteren en dit doorzetten naar de verzekeraar kan waterschade sneller verwerkt worden.
+                    3 Door een kastje in de auto kan bijvoorbeeld gekeken worden of je wel veilig rijdt en dit kan worden doorgegeven aan de klant
+                    4 Door een chip in het lichaam van een klant kan gezien worden hoe gezond een klant leeft en hoe de klant gezonder kan leven.
+                </i>
+                <br></br>
+                Voor verzekeraar Be Informed hebben wij (Mike, Gerwin, Dion en ik) tijdens deze opdracht een Business Model Canvas gemaakt en hebben wij een business case berekend. De business case ging over kastjes die een autoverzekeraar in de auto's van haar klanten plaatst. Hierdoor kon de premie worden aangepast op je rijgedrag. De berekeningen en BMC hiervan kun je vinden in  <a href= "https://docs.google.com/spreadsheets/d/1dPcelOW8yccDJNOLv8KCOkmYs4nbjzoq6KqWrNqVI6Q/edit?usp=sharing"target ="blank"> dit</a> <p>  Excel-document.
+                Ook hebben wij voor deze opdrachtgever een nieuwe business case verzonnen. Het betreft een App die een verzekerde moet downloaden in zijn/haar auto. De specificaties van deze app zijn hieronder beknopt weergegeven. </p>
+                <img src="images/de verzekeringsapp.jpeg" alt="" height= 75% width= 75% >
+                <br></br>
+                <h5><p>4. Weekopdracht Elk Wijchen</p> </h5>
+                <p>Bij deze minor kregen wij de mogelijkheid om op excursie te gaan bij een bedrijf dat zich veel bezighoud met lean en scrum. Voordat we als excursie naar Elk Wijchen gaan heb ik gekeken naar 5 principes van Lean.
+                <br></br>
+                Lean
+                <br><br>
+                Lean management gaat over het optimaliseren van processen zodat de klant beter bedient wordt. Lean kent vijf principes die hieronder verder uitgewerkt zullen worden:
+                <br></br>
+                Waarde
+                <br><br>
+                Iedere organisatie bestaat door de klanten. Zonder klanten zal een organisatie niet kunnen bestaan. Het is daarom belangrijk voor bedrijven dat er wordt nagedacht op welke manier er zoveel mogelijk waarde voor de klant wordt gecreëerd. Het is dan ook belangrijk om de klant goed te kennen zodat je weet wat de klant écht wil. Je klant kennen is de eerste stap om Lean in een organisatie te kunnen toepassen.
+                <br></br>
+                Waardestroom
+                <br><br>
+                Nadat er een duidelijk klantbeeld is bij een organisatie kunnen de activiteiten worden beoordeeld die waarde toevoegen voor de klant. Een manier om dit te doen is een Value Stream Map: (<a href="http://willemsalentijn.com/wp-content/uploads/2018/02/Waardestroom-en-Verspillingen-stroom.jpg">Voorbeeld</a> ). Met deze diagram wordt duidelijk wat de waardestroom is binnen een proces. Binnen Lean worden er twee activiteiten onderscheiden waar de klant zelf geen waarde aan hecht:
+                Business value added: activiteiten die nodig zijn om het bedrijf draaiend te houden.
+                Non Value Added: waardelozen activiteiten die geëlimineerd moeten worden.
+
+                <br></br>
+                Flow
+                <br><br>
+                De volgende stap in lean is het verwijderen van de geïdentificeerde verspillingen zodat er in een proces alleen maar waarde toevoegende activiteiten overblijven. Ook is het belangrijk dat de activiteiten zo op elkaar worden gestemd dat er geen opstoppingen zijn in een proces zoals voorraden. 
+                <br></br>
+                Pull
+                <br><br>
+                Als alle verspillingen in een proces geminimaliseerd zijn en alles gericht zijn op het toevoegen van waarde voor de klant. Is het belangrijk alleen te produceren wanneer een klant daarom vraagt. Dit is uitgaan vanuit de Pull. De uitstroom is dan de trigger voor de organisatie om voor nieuwe stroom te zorgen.
+                <br><br>
+                Perfectie
+                <br><br>
+                Het vijfde principe van lean is streven naar perfectie. Het doel is om een lerende organisatie te zijn die het iedere dag een stapje beter doet. Een mooie manier hiervan is het gebruiken van scrum: <a href="https://www.scrum.nl/wat-is-scrum-agile-scrum">klik hier voor meer informatie over scrum</a> 
+                <br></br>
+                </p>
+
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#portfolio"><b>Terug naar Opdrachten Smart Industry</b></a>
+                
+                </div>
+                <button class="accordjon">Smart Connection</button>
+                <div class="panel">
+                <br><br>
+                
+            
+                <br></br>
+                <h5>1. opdracht portfolio website maken</h5></p>
+                <p>Voor deze opdracht heb ik de website gemaakt waar u zich nu op bevind. Ik heb deze website gemaakt op basis van een template maar heb uiteindelijk hier veel aan moeten veranderen.</p>
+                <br></br>
+                <p><h5>2. opdracht Javascript koppelen</h5></p>
+                <p>Voor deze opdracht heb ik Javascript leren koppelen aan een website. Voor deze website hebben we een algoritme neergezet die de grootste gemene deler kan berekenen. Hieronder het resultaat</p>
+                <form>
+                    <p>Input a:</p>
+                    <input type="text" id="a-value" value=25000>
+                    <br>
+                    <p>Gedeeld door input b:</p>
+                    <input type="text" id= "b-value" value=500>
+                    <br><br>
+                    <input type="button" value="Klik hier voor een berekening" onclick="runFunction()">
+                    <p>De ggd van a en b is:</p>
+                    <p id='result'>....</p>
+                    <p>Aantal iteraties: <span id="runs">....</span>
+                    </form>
+                    <script src="script.js"></script>
+                    <article class="clock">
+                        <div class="hours-container">
+                          <div class="hours"></div>
+                        </div>
+                        <div class="minutes-container">
+                          <div class="minutes"></div>
+                        </div>
+                        <div class="seconds-container">
+                          <div class="seconds"></div>
+                        </div>
+                      </article>
+                <p><h5>3. Zelf javascript maken</h5></p>
+                <p>Voor deze opdracht ben ik zelf aan de slag gegaan met Javascript. Hieronder het resultaat</p>
+                <br></br>
+                
+                <p> Weet u de datum van vandaag niet?</p>
+
+                <button onclick="document.getElementById('Tijd').innerHTML=Date()">Klik hier voor de datum</button>
+
+                <p id="Tijd"></p>
+
+                <p> Uw geluksgetal van vandaag...</p>
+
+                <p id="Random Number"></p>
+                <br></br>
+                <li class="nav-item">                      
+                <a class="nav-link js-scroll-trigger"> 
+                <p>Hoelang tot 2020?</p>
+                <p id="Hoelang tot 2020?"></p>
+                <script>
+                    document.getElementById("Random Number").innerHTML =
+                   Math.floor(Math.random() * 100);
+                   </script>
+                   <script>
+                       // Set the date we're counting down to
+                       var countDownDate = new Date("Jan 1, 2020 00:00:00").getTime();
+                       
+                       // Update the count down every 1 second
+                       var x = setInterval(function() {
+                       
+                         // Get today's date and time
+                         var now = new Date().getTime();
+                       
+                         // Find the distance between now and the count down date
+                         var distance = countDownDate - now;
+                       
+                         // Time calculations for days, hours, minutes and seconds
+                         var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                         var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                         var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                         var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                       
+                         // Display the result in the element with id="demo"
+                         document.getElementById("Hoelang tot 2020?").innerHTML = days + "d " + hours + "h "
+                         + minutes + "m " + seconds + "s ";
+                       
+                         // If the count down is finished, write some text
+                         if (distance < 0) {
+                           clearInterval(x);
+                           document.getElementById("Hoelang tot 2020?").innerHTML = "Gelukkig nieuwjaar!";
+                         }
+                       }, 1000);
+                       </script>
+                <br></br>
+                <p><h5>4 opdracht Smart Connection API's </h5></p>
+                <p>Voor deze opdracht ben ik aan de gang gegaan met een website die verteld welk weer het is in een bepaalde regio. Hieronder het resultaat</p>
+                <br></br>
+                <div id="weather">
+                        <div id="description"></div>
+                        <h1 id="temp"></h1>
+                        <div id="location"></div>
+                      </div>
+                      <!-- 86e379c2b92e3a385f108ceebf9b3395 -->
+                      <script lang="text/javascript">
+                        function weatherBalloon( cityID ) {
+                            var key = '86e379c2b92e3a385f108ceebf9b3395';
+                            fetch('https://api.openweathermap.org/data/2.5/weather?id=' + cityID+ '&appid=' + key)  
+                            .then(function(resp) { return resp.json() }) // Convert data to json
+                            .then(function(data) {
+                              drawWeather(data); // Call drawWeather
+                            })
+                            .catch(function() {
+                              // catch any errors
+                            });
+                        }
+                  
+                        window.onload = function() {
+                          weatherBalloon( 2743607 );
+                          // city id here
+                        }
+                        function drawWeather( d ) {
+                      var celcius = Math.round(parseFloat(d.main.temp)-273.15);
+                      var fahrenheit = Math.round(((parseFloat(d.main.temp)-273.15)*1.8)+32); 
+                      var description = d.weather[0].description;
+                      
+                      document.getElementById('description').innerHTML = description;
+                      document.getElementById('temp').innerHTML = celcius + '&deg;';
+                      document.getElementById('location').innerHTML = d.name;
+                      
+                      if( description.indexOf('rain') > 0 ) {
+                        document.body.className = 'rainy';
+                    } else if( description.indexOf('cloud') > 0 ) {
+                        document.body.className = 'cloudy';
+                    } else if( description.indexOf('sunny') > 0 ) {
+                        document.body.className = 'sunny';
+                    }
+                  }
+                        
+                  
+                      </script>
+                <br></br>
+                <h5>5. Opdracht Big Data en Machine Learning</h5></p>
+                <p>Voor deze opdracht ben ik bezig geweest met big data en machine learning. Ik heb hier geleerd en ingezien hoe machine learning werkt en waarom er big data nodig is om machine learning mogelijk te maken. Tijdens deze opdracht ben ik bezig geweest met een afbeeldingsherkenner.  </p>
+
+
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#portfolio"><b>Terug naar Opdrachten Smart Industry</b></a>
+                </div>
+                <button class="accordjon">Smart Technology</button>
+                <div class="panel">
+                <br><br>
+                <p><h5>Opdracht geautomatiseerd plantonderhoud</h5></p>
+                <p>Voor Smart Technology heb ik een Iot-Schakeling gebouwd die de lichtintensiteit, de aardvochtigheid en de temperatuur beheerst van een plant. Voor deze plant is naast een IoT-schakeling ook een PCB gemaakt (een printplaat), hebben we een 3d case gemaakt, en is er gesoldeerd om alle componenten van de IoT schakeling aan elkaar te krijgen. Hieronder de foto's en filmpjes van dit ontwerp</p>
+
+                <br></br>
+                    <li class="nav-item">                      <a class="nav-link js-scroll-trigger" href="#portfolio"><b>Terug naar Opdrachten Smart Industry</b></a>
+                </div>
+                <button class="accordjon">Smart Project</button>
+                <div class="panel">
+                <br><br>
+                <p><h5>Opdracht 1.</h5></p>
+                <p>tekst</p>
+                <br></br>
+                    <li class="nav-item">                      <a class="nav-link js-scroll-trigger" href="#portfolio"><b>Terug naar Opdrachten Smart Industry</b></a>
+
+
+                <script>
+                var acc = document.getElementsByClassName("accordjon");
+                var i;
+                
+                for (i = 0; i < acc.length; i++) {
+                  acc[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var panel = this.nextElementSibling;
+                    if (panel.style.display === "block") {
+                      panel.style.display = "none";
+                    } else {
+                      panel.style.display = "block";
+                    }
+                  });
+                }
+                </script>
+                
+			
+			
+			</div>
+		</div>
+	</div>
+	
+	 <div id="testimonials" class="section wb">
+        <div class="container">
+            <div class="section-title text-left">
+                <h3>Competenties</h3>
+                <p>  Hieronder zal ik aangeven welke competenties ik heb ontwikkeld tijdens deze minor. De competenties die belangrijk zijn in deze minor zijn: </p>
         <p>
             <ul style="list-style-type: circle;">
-                <li>Probleem herkenning en diagnose</li>
-                <li>Innoveren</li>
-                <li>Onderzoekend vermogen</li>
-                <li>Sociaal communicatieve vaardigheden</li>
-                <li>Schakelen en verbinden</li>
-                <li>Professioneel handelen uit waarden</li>
+                <li>- Probleem herkenning en diagnose</li>
+                <li>- Innoveren</li>
+                <li>- Onderzoekend vermogen</li>
+                <li>- Sociaal communicatieve vaardigheden</li>
+                <li>- Schakelen en verbinden</li>
+                <li>- Professioneel handelen uit waarden</li>
             </ul>
-          <p>Door op de onderstaande knoppneng-GJngjo</p>
-        </div>
-              
+            </div><!-- end title -->
 
-        <button type="button" class="collapsible" onclick="collapsible()">
-          <h1>Over Mij</h1>
-      </button>
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <div class="testi-carousel owl-carousel owl-theme">
+                        <div class="testimonial clearfix">
+                            <div class="desc">
+                                
+                                <h3> Probleem herkenning en diagnose</h3>
+                                <p class="lead">Wat houdt het in?????</p>
+                                <br></br>
+                                <p><b>Ontwikkeling</b></p>
+                                <p class="lead">Ontwikkeling</p>
+                                <li class="nav-item">                      <a class="nav-link js-scroll-trigger" href="#testimonials"><b>Terug naar competenties</b></a>
+                            </div>
+                           
+                            <!-- end testi-meta -->
+                        </div>
+                        <!-- end testimonial -->
 
-      <div class="content">
-    <!-- bovenstaande is voor uitklappen -->
-          <p> Filmpje Hello World.</p>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/h0iWYgPXgzI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-     </div>
- 
-      <footer class="footer-distributed">
+                        <div class="testimonial clearfix">
+                            <div class="desc">
+                                <h3> Innoveren</h3>
+                                <p class="lead">Wat houdt het in?????</p>
+                                <br></br>
+                                <p><b>Ontwikkeling</b></p>
+                                <p class="lead">Ontwikkeling</p>
+                                <li class="nav-item">                      <a class="nav-link js-scroll-trigger" href="#testimonials"><b>Terug naar competenties</b></a>
+                            </div>
+                            
+                            <!-- end testi-meta -->
+                        </div>
+                        <!-- end testimonial -->
 
-        <div class="footer-left">
-            <a href="https://www.han.nl/">
-                <img src="Images/HAN-Logo.png"></a>
-            <a href="https://www.avans.nl/">
-                <img src="Images/Avans_Logo.png"></a>
-            <h3>Contactgegevens<span></h3>
+                        <div class="testimonial clearfix">
+                            <div class="desc">
+                                <h3> Onderzoekend vermogen</h3>
+                                <p class="lead">Wat houdt het in?????</p>
+                                <br></br>
+                                <p><b>Ontwikkeling</b></p>
+                                <p class="lead">Ontwikkeling</p>
+                                <li class="nav-item">                      <a class="nav-link js-scroll-trigger" href="#testimonials"><b>Terug naar competenties</b></a>
+                            </div>
+                            
+                            <!-- end testi-meta -->
+                        </div>
+                        <!-- end testimonial -->
+                        <div class="testimonial clearfix">
+                            <div class="desc">
+                                <h3> Sociaal communicatieve vaardigheden</h3>
+                                <p class="lead">Wat houdt het in?????</p>
+                                <br></br>
+                                <p><b>Ontwikkeling</b></p>
+                                <p class="lead">Ontwikkeling</p>
+                                <li class="nav-item">                      <a class="nav-link js-scroll-trigger" href="#testimonials"><b>Terug naar competenties</b></a>
+                            </div>
+                            
+                            <!-- end testi-meta -->
+                        </div>
+                        <!-- end testimonial -->
 
-            <!--			<p class="footer-links">
-				<a href="#">Home</a>
-				|
-				<a href="#">Blog</a>
-				|
-				<a href="#">About</a>
-				|
-				<a href="#">Contact</a>
-			</p>-->
+                        <div class="testimonial clearfix">
+                            <div class="desc">
+                                <h3> Schakelen en verbinden</h3>
+                                <p class="lead">Wat houdt het in?????</p>
+                                <br></br>
+                                <p><b>Ontwikkeling</b></p>
+                                <p class="lead">Ontwikkeling</p>
+                                <li class="nav-item">                      <a class="nav-link js-scroll-trigger" href="#testimonials"><b>Terug naar competenties</b></a>
+                            </div>
+                           
+                            <!-- end testi-meta -->
+                        </div>
+                        <!-- end testimonial -->
 
+                        <div class="testimonial clearfix">
+                            <div class="desc">
+                                <h3> Professioneel handelen uit waarden</h3>
+                                <p class="lead">Wat houdt het in?????</p>
+                                <br></br>
+                                <p><b>Ontwikkeling</b></p>
+                                <p class="lead">ontwikkeling</p>
+                                <li class="nav-item">                      <a class="nav-link js-scroll-trigger" href="#testimonials"><b>Terug naar competenties</b></a>
+                            </div>
+                            
+                            <!-- end testi-meta -->
+                        </div><!-- end testimonial -->
+                    </div><!-- end carousel -->
+                </div><!-- end col -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->
+	
+	<div id="blog" class="section lb">
+		<div class="container">
+			<div class="section-title text-left">
+                <h3>
+                    Excursies
+                </h3>
+                <p>  Hieronder zal ik laten zien welke excursuies en cursussen ik heb bij mogen wonen voor deze minor</p>
+        
+            </div><!-- end title -->
+			
+			<div class="row">
+				<div class="col-md-4 col-sm-6 col-lg-4">
+					<div class="post-box">
+						<div class="post-thumb">
+							<img src="uploads/Scrum Elk Wijchen.jpeg" class="img-fluid" alt="post-img" />
+							<div class="date">
+								<span>25</span>
+								<span>September</span>
+							</div>
+						</div>
+						<div class="post-info">
+							<h4>Elk Wijchen Scrum en Lean</h4>
+							<ul>
+                                
+                            </ul>
+							<p>Tekst</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6 col-lg-4">
+					<div class="post-box">
+						<div class="post-thumb">
+							<img src="uploads/atag.jpeg" class="img-fluid" alt="post-img" />
+							<div class="date">
+								<span>10</span>
+								<span>Oktober</span>
+							</div>
+						</div>
+						<div class="post-info">
+							<h4>Atag dag</h4>
+							
+							<p>Tekst</p>
+						</div>
+					</div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-lg-4">
+                        <div class="post-box">
+                            <div class="post-thumb">
+                                <img src="uploads/Kookworkshop.jpeg" class="img-fluid" alt="post-img" />
+                                <div class="date">
+                                    <span>25</span>
+                                    <span>Oktober</span>
+                                </div>
+                            </div>
+                            <div class="post-info">
+                                <h4>KookWorkshop Wijchen</h4>
+                                
+                                <p>Tekst</p>
+                            </div>
+                        </div>
+                    </div>
+                <div class="col-md-4 col-sm-6 col-lg-4">
+                        <div class="post-box">
+                            <div class="post-thumb">
+                                <img src="uploads/blog-03.jpg" class="img-fluid" alt="post-img" />
+                                <div class="date">
+                                    <span>1</span>
+                                    <span>November</span>
+                                </div>
+                            </div>
+                            <div class="post-info">
+                                <h4>NXP Nijmegen</h4>
+                                
+                                <p>Tekst</p>
+                            </div>
+                        </div>
+                    </div>
+				<div class="col-md-4 col-sm-6 col-lg-4">
+					<div class="post-box">
+						<div class="post-thumb">
+							<img src="uploads/de heus.jpg" class="img-fluid" alt="post-img" />
+							<div class="date">
+								<span>8</span>
+								<span>November</span>
+							</div>
+						</div>
+						<div class="post-info">
+							<h4>De Heus Veevoeders</h4>
+							
+							<p>Tekst</p>
+						</div>
+					</div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-lg-4">
+                        <div class="post-box">
+                            <div class="post-thumb">
+                                <img src="uploads/TOM.jpeg" class="img-fluid" alt="post-img" />
+                                <div class="date">
+                                    <span>15</span>
+                                    <span>November</span>
+                                </div>
+                            </div>
+                            <div class="post-info">
+                                <h4>TOM-Model</h4>
+                                
+                                <p>Tekst</p>
+                            </div>
+                        </div>
+                    </div>
+			</div>
+			
+		</div>
+	</div>
 
+    <div id="contact" class="section db">
+        <div class="container">
+            <div class="section-title text-left">
+                <h3>Contact</h3>
+                <p>Hieronder mijn contactgegevens</p>
+            </div><!-- end title -->
 
-        </div>
-
-        <div class="footer-center">
-            <div>
-                <i class="fa fa-map-marker"></i>
-                <p>
-                    <!--<span>309 - Rupa Solitaire,
-						Bldg. No. A - 1, Sector - 1</span>-->
-                    Zutphen
-                </p>
+            
+    <div class="copyrights">
+        <div class="container">
+            <div class="footer-distributed">
+                <div class="footer-left">
+                    <p class="footer-links">
+                        <a href="#">Smart Project link nog toevoegen</a>
+                        <a href="https://www.linkedin.com/in/luuk-wenting-7511a6192"target=_blank>Linkedin</a>
+                        <a href="https://www.facebook.com/luuk.wenting.3"target=_blank>Facebook</a>
+                        <a href="https://www.instagram.com/luukwe/?hl=nl"target=_blank>Instagram</a>
+                       
+                    </p>
+                    <p class="footer-company-name">
+                </div>
             </div>
+        </div><!-- end container -->
+    </div><!-- end copyrights -->
 
-            <div>
-                <i class="fa fa-phone"></i>
-                <p>+31 629890746</p>
-            </div>
-            <div>
-                <i class="fa fa-envelope"></i>
-                <p><a href="mailto:jj.reuvers1@student.avans.nl">luuk.w@hotmail.nl</a></p>
-            </div>
-            <div>
-          
-            </div>
-        </div>
+    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
 
-        <div class="footer-right">
-           <!-- <p class="footer-company-about">
-                <span>About the company</span>
-			    We offer training and skill building courses across Technology, Design, Management, Science and Humanities.
+    <!-- ALL JS FILES -->
+    <script src="js/all.js"></script>
+	<!-- Camera Slider -->
+	<script src="js/jquery.mobile.customized.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script> 
+	<script src="js/parallaxie.js"></script>
+	<script src="js/headline.js"></script>
+	<!-- Contact form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/custom.js"></script>
+    <script src="js/jquery.vide.js"></script>
 
-            </p>-->
-
-            <div class="footer-icons">
-                <a href="https://www.linkedin.com/in/luuk-wenting-7511a6192"><i class="fa fa-facebook"></i></a>
-                <!--<a href="#"><i class="fa fa-twitter"></i></a>
-				<a href="#"><i class="fa fa-instagram"></i></a>-->
-                <a href="https://www.linkedin.com/in/luuk-wenting-7511a6192"><i class="fa fa-linkedin"></i></a>
-                <!--<a href="#"><i class="fa fa-youtube"></i></a>-->
-            </div>
-
-            <!--Creative commons-->
-            <p class="footer-company-about">
-                <br />
-                <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
-                    <img alt="Creative Commons License" style="border-width: 0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />
-                    This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License
-                </a>
-
-            </p>
-
-        </div>
-    </footer>
-  <!-- END MAIN -->
 </body>
 </html>
