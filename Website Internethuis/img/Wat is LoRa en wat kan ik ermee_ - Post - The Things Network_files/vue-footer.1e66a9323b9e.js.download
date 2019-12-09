@@ -1,0 +1,5 @@
+
+new Vue({
+  el: '#footer',
+  render: function(h) { return h('footer-ttn') }
+})

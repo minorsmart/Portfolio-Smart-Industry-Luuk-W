@@ -1,0 +1,39 @@
+
+var app = new Vue({
+  data: function() { return { user: null } },
+  render: function(h) {
+
+      var currentPath = window.location.pathname;
+
+      var props = {
+          user: this.user,
+          currentPath,
+          japanese: currentPath === '/country/japan/'
+      }
+
+      if (window._navbar_threshold_scroll) {
+        props.background_appears_threshold = window._navbar_threshold_scroll
+      }
+      return h('navbar-ttn', { props })
+  }
+})
+
+fetch('/api/user/me', { credentials: 'include' })
+    .then(function(data) { return data.json() })
+    .then(function(data) {
+        Vue.set(app, 'user', data.me)
+        app.$mount('#header')
+    })
+    .catch(function(e) {
+      console.error(e)
+      app.$mount('#header')
+    })
+
+// to put in the template
+// <div id="header"></div>
+//
+// <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.min.js"></script>
+// <script src="{{ static('common/js/ttn-components.js') }}"></script>
+// <script src="https://cdn.jsdelivr.net/npm/promise-polyfill@7/dist/polyfill.min.js"></script>
+// <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.3/fetch.min.js"></script>
+// <script src="{{ static('common/js/vue-navbar.js') }}"></script>
