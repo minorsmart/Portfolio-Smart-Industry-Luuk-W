@@ -2168,7 +2168,7 @@ select.mobile-device {
 }
 
 .footer-links a {
-    color: #999;
+    color: rgb(153, 153, 153);
 }
 
 .footer-links a:hover,
